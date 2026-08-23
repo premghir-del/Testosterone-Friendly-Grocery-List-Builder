@@ -1,0 +1,4326 @@
+[
+  {
+    "id": "ground-beef-8515",
+    "name": "Ground Beef, 85/15",
+    "category": "protein-meat",
+    "referenceServing": "4 oz (113g) raw",
+    "dietTags": [
+      "dairy-free",
+      "gluten-free",
+      "keto"
+    ],
+    "nutrients": {
+      "zincMg": 5.4,
+      "magnesiumMg": 20,
+      "vitaminDIU": 0,
+      "proteinG": 19,
+      "healthyFatG": 17
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 7,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 14.97,
+          "packageLabel": "3 lb (48 oz)",
+          "servingsPerPackage": 12
+        },
+        "walmart": {
+          "price": 5.24,
+          "packageLabel": "1 lb (16 oz)",
+          "servingsPerPackage": 4
+        },
+        "traderJoes": {
+          "price": 7.99,
+          "packageLabel": "1 lb grass-fed (16 oz)",
+          "servingsPerPackage": 4
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 17.69,
+          "packageLabel": "1.4 kg",
+          "servingsPerPackage": 12
+        },
+        "walmart": {
+          "price": 6.49,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        },
+        "noFrills": {
+          "price": 8.79,
+          "packageLabel": "450 g grass-fed",
+          "servingsPerPackage": 4
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 4.29,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        },
+        "asda": {
+          "price": 3.89,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        },
+        "aldi": {
+          "price": 5.29,
+          "packageLabel": "450 g grass-fed",
+          "servingsPerPackage": 4
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 7.99,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        },
+        "coles": {
+          "price": 7.79,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        },
+        "aldi": {
+          "price": 9.69,
+          "packageLabel": "450 g grass-fed",
+          "servingsPerPackage": 4
+        }
+      }
+    }
+  },
+  {
+    "id": "ground-turkey-937",
+    "name": "Ground Turkey, 93/7",
+    "category": "protein-meat",
+    "referenceServing": "4 oz (113g) raw",
+    "dietTags": [
+      "dairy-free",
+      "gluten-free",
+      "keto"
+    ],
+    "nutrients": {
+      "zincMg": 3.3,
+      "magnesiumMg": 23,
+      "vitaminDIU": 0,
+      "proteinG": 23,
+      "healthyFatG": 9
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 7,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 11.99,
+          "packageLabel": "3 lb (48 oz) tray pack",
+          "servingsPerPackage": 12
+        },
+        "walmart": {
+          "price": 4.38,
+          "packageLabel": "1 lb (16 oz)",
+          "servingsPerPackage": 4
+        },
+        "traderJoes": {
+          "price": 5.49,
+          "packageLabel": "1 lb (16 oz)",
+          "servingsPerPackage": 4
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 13.99,
+          "packageLabel": "1.4 kg tray pack",
+          "servingsPerPackage": 12
+        },
+        "walmart": {
+          "price": 5.49,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        },
+        "noFrills": {
+          "price": 5.99,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 3.49,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        },
+        "asda": {
+          "price": 3.29,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        },
+        "aldi": {
+          "price": 3.49,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 6.79,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        },
+        "coles": {
+          "price": 6.49,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        },
+        "aldi": {
+          "price": 6.69,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        }
+      }
+    }
+  },
+  {
+    "id": "pork-tenderloin",
+    "name": "Pork Tenderloin",
+    "category": "protein-meat",
+    "referenceServing": "4 oz (113g) raw",
+    "dietTags": [
+      "dairy-free",
+      "gluten-free",
+      "keto"
+    ],
+    "nutrients": {
+      "zincMg": 2.7,
+      "magnesiumMg": 28,
+      "vitaminDIU": 27,
+      "proteinG": 24,
+      "healthyFatG": 4
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 7,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 13.99,
+          "packageLabel": "2.5 lb (40 oz), 2-pack",
+          "servingsPerPackage": 10
+        },
+        "walmart": {
+          "price": 4.97,
+          "packageLabel": "1 lb (16 oz)",
+          "servingsPerPackage": 4
+        },
+        "traderJoes": null
+      },
+      "ca": {
+        "costco": {
+          "price": 16.49,
+          "packageLabel": "1.1 kg, 2-pack",
+          "servingsPerPackage": 10
+        },
+        "walmart": {
+          "price": 6.29,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        },
+        "noFrills": {
+          "price": 5.49,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 3.99,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        },
+        "asda": {
+          "price": 3.69,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        },
+        "aldi": {
+          "price": 3.29,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 7.69,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        },
+        "coles": {
+          "price": 7.49,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        },
+        "aldi": {
+          "price": 5.99,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        }
+      }
+    }
+  },
+  {
+    "id": "lamb-loin-chops",
+    "name": "Lamb Loin Chops",
+    "category": "protein-meat",
+    "referenceServing": "4 oz (113g) raw",
+    "dietTags": [
+      "dairy-free",
+      "gluten-free",
+      "keto"
+    ],
+    "nutrients": {
+      "zincMg": 5.1,
+      "magnesiumMg": 24,
+      "vitaminDIU": 0,
+      "proteinG": 28,
+      "healthyFatG": 19
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 4,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 19.99,
+          "packageLabel": "2 lb (32 oz)",
+          "servingsPerPackage": 8
+        },
+        "walmart": null,
+        "traderJoes": {
+          "price": 9.99,
+          "packageLabel": "1 lb (16 oz)",
+          "servingsPerPackage": 4
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 23.49,
+          "packageLabel": "900 g",
+          "servingsPerPackage": 8
+        },
+        "walmart": null,
+        "noFrills": {
+          "price": 10.99,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 16.29,
+          "packageLabel": "900 g",
+          "servingsPerPackage": 8
+        },
+        "asda": {
+          "price": 14.79,
+          "packageLabel": "900 g",
+          "servingsPerPackage": 8
+        },
+        "aldi": {
+          "price": 6.49,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 14.89,
+          "packageLabel": "900 g",
+          "servingsPerPackage": 8
+        },
+        "coles": {
+          "price": 14.29,
+          "packageLabel": "900 g",
+          "servingsPerPackage": 8
+        },
+        "aldi": {
+          "price": 5.79,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        }
+      }
+    }
+  },
+  {
+    "id": "chicken-thighs-bone-in",
+    "name": "Chicken Thighs, Bone-In Skin-On",
+    "category": "protein-meat",
+    "referenceServing": "4 oz (113g) raw",
+    "dietTags": [
+      "dairy-free",
+      "gluten-free",
+      "keto"
+    ],
+    "nutrients": {
+      "zincMg": 2.2,
+      "magnesiumMg": 21,
+      "vitaminDIU": 0,
+      "proteinG": 18,
+      "healthyFatG": 15
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 7,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 10.99,
+          "packageLabel": "6 lb (96 oz) family pack",
+          "servingsPerPackage": 24
+        },
+        "walmart": {
+          "price": 1.68,
+          "packageLabel": "1 lb (16 oz)",
+          "servingsPerPackage": 4
+        },
+        "traderJoes": {
+          "price": 2.99,
+          "packageLabel": "1 lb (16 oz)",
+          "servingsPerPackage": 4
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 12.89,
+          "packageLabel": "2.7 kg family pack",
+          "servingsPerPackage": 24
+        },
+        "walmart": {
+          "price": 1.99,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        },
+        "noFrills": {
+          "price": 3.29,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 1.29,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        },
+        "asda": {
+          "price": 1.29,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        },
+        "aldi": {
+          "price": 1.89,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 2.69,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        },
+        "coles": {
+          "price": 2.49,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        },
+        "aldi": {
+          "price": 3.69,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        }
+      }
+    }
+  },
+  {
+    "id": "beef-liver",
+    "name": "Beef Liver",
+    "category": "protein-meat",
+    "referenceServing": "4 oz (113g) raw",
+    "dietTags": [
+      "dairy-free",
+      "gluten-free",
+      "keto"
+    ],
+    "nutrients": {
+      "zincMg": 4.5,
+      "magnesiumMg": 20,
+      "vitaminDIU": 21,
+      "proteinG": 23,
+      "healthyFatG": 4.5
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 2,
+    "stores": {
+      "us": {
+        "costco": null,
+        "walmart": {
+          "price": 3.98,
+          "packageLabel": "1 lb (16 oz)",
+          "servingsPerPackage": 4
+        },
+        "traderJoes": null
+      },
+      "ca": {
+        "costco": null,
+        "walmart": {
+          "price": 4.89,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        },
+        "noFrills": {
+          "price": 4.29,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 3.29,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        },
+        "asda": {
+          "price": 2.99,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        },
+        "aldi": {
+          "price": 2.49,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 6.29,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        },
+        "coles": {
+          "price": 5.99,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        },
+        "aldi": {
+          "price": 4.79,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 4
+        }
+      }
+    }
+  },
+  {
+    "id": "canned-sockeye-salmon",
+    "name": "Canned Wild Sockeye Salmon",
+    "category": "seafood",
+    "referenceServing": "1 can (5 oz / 141g) drained",
+    "dietTags": [
+      "dairy-free",
+      "gluten-free",
+      "keto",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 0.9,
+      "magnesiumMg": 34,
+      "vitaminDIU": 570,
+      "proteinG": 25,
+      "healthyFatG": 7
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 4,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 16.99,
+          "packageLabel": "6-pack (6 x 5 oz cans)",
+          "servingsPerPackage": 6
+        },
+        "walmart": {
+          "price": 3.98,
+          "packageLabel": "1 can (5 oz)",
+          "servingsPerPackage": 1
+        },
+        "traderJoes": {
+          "price": 3.49,
+          "packageLabel": "1 can (5 oz)",
+          "servingsPerPackage": 1
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 19.99,
+          "packageLabel": "6-pack (6 x 140 g cans)",
+          "servingsPerPackage": 6
+        },
+        "walmart": {
+          "price": 4.89,
+          "packageLabel": "1 can (140 g)",
+          "servingsPerPackage": 1
+        },
+        "noFrills": {
+          "price": 3.89,
+          "packageLabel": "1 can (140 g)",
+          "servingsPerPackage": 1
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 3.29,
+          "packageLabel": "1 can (140 g)",
+          "servingsPerPackage": 1
+        },
+        "asda": {
+          "price": 2.99,
+          "packageLabel": "1 can (140 g)",
+          "servingsPerPackage": 1
+        },
+        "aldi": {
+          "price": 2.29,
+          "packageLabel": "1 can (140 g)",
+          "servingsPerPackage": 1
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 6.29,
+          "packageLabel": "1 can (140 g)",
+          "servingsPerPackage": 1
+        },
+        "coles": {
+          "price": 5.99,
+          "packageLabel": "1 can (140 g)",
+          "servingsPerPackage": 1
+        },
+        "aldi": {
+          "price": 4.29,
+          "packageLabel": "1 can (140 g)",
+          "servingsPerPackage": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "canned-smoked-oysters",
+    "name": "Canned Smoked Oysters",
+    "category": "seafood",
+    "referenceServing": "1 can (3 oz / 85g)",
+    "dietTags": [
+      "dairy-free",
+      "gluten-free",
+      "keto"
+    ],
+    "nutrients": {
+      "zincMg": 27,
+      "magnesiumMg": 21,
+      "vitaminDIU": 5,
+      "proteinG": 9,
+      "healthyFatG": 5
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 3,
+    "stores": {
+      "us": {
+        "costco": null,
+        "walmart": {
+          "price": 2.48,
+          "packageLabel": "1 can (3 oz)",
+          "servingsPerPackage": 1
+        },
+        "traderJoes": {
+          "price": 3.49,
+          "packageLabel": "1 can (3 oz)",
+          "servingsPerPackage": 1
+        }
+      },
+      "ca": {
+        "costco": null,
+        "walmart": {
+          "price": 2.99,
+          "packageLabel": "1 can (85 g)",
+          "servingsPerPackage": 1
+        },
+        "noFrills": {
+          "price": 3.89,
+          "packageLabel": "1 can (85 g)",
+          "servingsPerPackage": 1
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 1.99,
+          "packageLabel": "1 can (85 g)",
+          "servingsPerPackage": 1
+        },
+        "asda": {
+          "price": 1.79,
+          "packageLabel": "1 can (85 g)",
+          "servingsPerPackage": 1
+        },
+        "aldi": {
+          "price": 2.29,
+          "packageLabel": "1 can (85 g)",
+          "servingsPerPackage": 1
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 3.89,
+          "packageLabel": "1 can (85 g)",
+          "servingsPerPackage": 1
+        },
+        "coles": {
+          "price": 3.69,
+          "packageLabel": "1 can (85 g)",
+          "servingsPerPackage": 1
+        },
+        "aldi": {
+          "price": 4.29,
+          "packageLabel": "1 can (85 g)",
+          "servingsPerPackage": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "sardines-in-olive-oil",
+    "name": "Sardines in Olive Oil",
+    "category": "seafood",
+    "referenceServing": "1 can (3.75 oz / 106g)",
+    "dietTags": [
+      "dairy-free",
+      "gluten-free",
+      "keto",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 1.4,
+      "magnesiumMg": 39,
+      "vitaminDIU": 190,
+      "proteinG": 23,
+      "healthyFatG": 11
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 4,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 12.99,
+          "packageLabel": "8-pack (8 x 3.75 oz cans)",
+          "servingsPerPackage": 8
+        },
+        "walmart": {
+          "price": 1.18,
+          "packageLabel": "1 can (3.75 oz)",
+          "servingsPerPackage": 1
+        },
+        "traderJoes": {
+          "price": 1.49,
+          "packageLabel": "1 can (3.75 oz)",
+          "servingsPerPackage": 1
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 15.29,
+          "packageLabel": "8-pack (8 x 105 g cans)",
+          "servingsPerPackage": 8
+        },
+        "walmart": {
+          "price": 1.49,
+          "packageLabel": "1 can (105 g)",
+          "servingsPerPackage": 1
+        },
+        "noFrills": {
+          "price": 1.69,
+          "packageLabel": "1 can (105 g)",
+          "servingsPerPackage": 1
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 0.99,
+          "packageLabel": "1 can (105 g)",
+          "servingsPerPackage": 1
+        },
+        "asda": {
+          "price": 0.89,
+          "packageLabel": "1 can (105 g)",
+          "servingsPerPackage": 1
+        },
+        "aldi": {
+          "price": 0.99,
+          "packageLabel": "1 can (105 g)",
+          "servingsPerPackage": 1
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 1.79,
+          "packageLabel": "1 can (105 g)",
+          "servingsPerPackage": 1
+        },
+        "coles": {
+          "price": 1.79,
+          "packageLabel": "1 can (105 g)",
+          "servingsPerPackage": 1
+        },
+        "aldi": {
+          "price": 1.79,
+          "packageLabel": "1 can (105 g)",
+          "servingsPerPackage": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "wild-caught-shrimp",
+    "name": "Wild-Caught Shrimp, Frozen",
+    "category": "seafood",
+    "referenceServing": "4 oz (113g) raw",
+    "dietTags": [
+      "dairy-free",
+      "gluten-free",
+      "keto"
+    ],
+    "nutrients": {
+      "zincMg": 1.6,
+      "magnesiumMg": 39,
+      "vitaminDIU": 0,
+      "proteinG": 24,
+      "healthyFatG": 0.9
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 5,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 14.99,
+          "packageLabel": "2 lb (32 oz) bag, frozen",
+          "servingsPerPackage": 8
+        },
+        "walmart": {
+          "price": 8.97,
+          "packageLabel": "12 oz bag, frozen",
+          "servingsPerPackage": 3
+        },
+        "traderJoes": {
+          "price": 8.99,
+          "packageLabel": "1 lb (16 oz) bag, frozen",
+          "servingsPerPackage": 4
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 17.69,
+          "packageLabel": "900 g bag, frozen",
+          "servingsPerPackage": 8
+        },
+        "walmart": {
+          "price": 10.99,
+          "packageLabel": "340 g bag, frozen",
+          "servingsPerPackage": 3
+        },
+        "noFrills": {
+          "price": 9.89,
+          "packageLabel": "450 g bag, frozen",
+          "servingsPerPackage": 4
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 7.29,
+          "packageLabel": "340 g bag, frozen",
+          "servingsPerPackage": 3
+        },
+        "asda": {
+          "price": 6.69,
+          "packageLabel": "340 g bag, frozen",
+          "servingsPerPackage": 3
+        },
+        "aldi": {
+          "price": 5.79,
+          "packageLabel": "450 g bag, frozen",
+          "servingsPerPackage": 4
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 13.89,
+          "packageLabel": "340 g bag, frozen",
+          "servingsPerPackage": 3
+        },
+        "coles": {
+          "price": 13.49,
+          "packageLabel": "340 g bag, frozen",
+          "servingsPerPackage": 3
+        },
+        "aldi": {
+          "price": 10.89,
+          "packageLabel": "450 g bag, frozen",
+          "servingsPerPackage": 4
+        }
+      }
+    }
+  },
+  {
+    "id": "canned-tuna-chunk-light",
+    "name": "Canned Tuna, Chunk Light in Water",
+    "category": "seafood",
+    "referenceServing": "1 can (5 oz)",
+    "dietTags": [
+      "dairy-free",
+      "gluten-free",
+      "keto",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 0.6,
+      "magnesiumMg": 27,
+      "vitaminDIU": 68,
+      "proteinG": 20,
+      "healthyFatG": 1
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 3,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 10.99,
+          "packageLabel": "8-pack (8 x 5 oz cans)",
+          "servingsPerPackage": 8
+        },
+        "walmart": {
+          "price": 1.24,
+          "packageLabel": "1 can (5 oz)",
+          "servingsPerPackage": 1
+        },
+        "traderJoes": {
+          "price": 1.49,
+          "packageLabel": "1 can (5 oz)",
+          "servingsPerPackage": 1
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 12.89,
+          "packageLabel": "8-pack (8 x 140 g cans)",
+          "servingsPerPackage": 8
+        },
+        "walmart": {
+          "price": 1.49,
+          "packageLabel": "1 can (140 g)",
+          "servingsPerPackage": 1
+        },
+        "noFrills": {
+          "price": 1.69,
+          "packageLabel": "1 can (140 g)",
+          "servingsPerPackage": 1
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 0.99,
+          "packageLabel": "1 can (140 g)",
+          "servingsPerPackage": 1
+        },
+        "asda": {
+          "price": 0.89,
+          "packageLabel": "1 can (140 g)",
+          "servingsPerPackage": 1
+        },
+        "aldi": {
+          "price": 0.99,
+          "packageLabel": "1 can (140 g)",
+          "servingsPerPackage": 1
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 1.89,
+          "packageLabel": "1 can (140 g)",
+          "servingsPerPackage": 1
+        },
+        "coles": {
+          "price": 1.89,
+          "packageLabel": "1 can (140 g)",
+          "servingsPerPackage": 1
+        },
+        "aldi": {
+          "price": 1.79,
+          "packageLabel": "1 can (140 g)",
+          "servingsPerPackage": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "atlantic-mackerel-fillets",
+    "name": "Atlantic Mackerel Fillets, Frozen",
+    "category": "seafood",
+    "referenceServing": "4 oz (113g)",
+    "dietTags": [
+      "dairy-free",
+      "gluten-free",
+      "keto",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 0.7,
+      "magnesiumMg": 97,
+      "vitaminDIU": 360,
+      "proteinG": 20,
+      "healthyFatG": 12
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 4,
+    "stores": {
+      "us": {
+        "costco": null,
+        "walmart": {
+          "price": 6.98,
+          "packageLabel": "12 oz (340g) frozen fillets",
+          "servingsPerPackage": 3
+        },
+        "traderJoes": {
+          "price": 5.99,
+          "packageLabel": "12 oz (340g) frozen fillets",
+          "servingsPerPackage": 3
+        }
+      },
+      "ca": {
+        "costco": null,
+        "walmart": {
+          "price": 8.69,
+          "packageLabel": "340 g frozen fillets",
+          "servingsPerPackage": 3
+        },
+        "noFrills": {
+          "price": 6.69,
+          "packageLabel": "340 g frozen fillets",
+          "servingsPerPackage": 3
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 5.69,
+          "packageLabel": "340 g frozen fillets",
+          "servingsPerPackage": 3
+        },
+        "asda": {
+          "price": 5.29,
+          "packageLabel": "340 g frozen fillets",
+          "servingsPerPackage": 3
+        },
+        "aldi": {
+          "price": 3.89,
+          "packageLabel": "340 g frozen fillets",
+          "servingsPerPackage": 3
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 10.79,
+          "packageLabel": "340 g frozen fillets",
+          "servingsPerPackage": 3
+        },
+        "coles": {
+          "price": 10.49,
+          "packageLabel": "340 g frozen fillets",
+          "servingsPerPackage": 3
+        },
+        "aldi": {
+          "price": 7.29,
+          "packageLabel": "340 g frozen fillets",
+          "servingsPerPackage": 3
+        }
+      }
+    }
+  },
+  {
+    "id": "pasture-raised-eggs",
+    "name": "Pasture-Raised Eggs",
+    "category": "eggs-dairy",
+    "referenceServing": "1 large egg",
+    "dietTags": [
+      "vegetarian",
+      "dairy-free",
+      "gluten-free",
+      "keto",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 0.6,
+      "magnesiumMg": 6,
+      "vitaminDIU": 44,
+      "proteinG": 6,
+      "healthyFatG": 5
+    },
+    "minWeeklyServings": 2,
+    "maxWeeklyServings": 14,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 6.99,
+          "packageLabel": "24-count, cage-free",
+          "servingsPerPackage": 24
+        },
+        "walmart": {
+          "price": 3.98,
+          "packageLabel": "18-count",
+          "servingsPerPackage": 18
+        },
+        "traderJoes": {
+          "price": 5.99,
+          "packageLabel": "12-count, pasture-raised",
+          "servingsPerPackage": 12
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 8.29,
+          "packageLabel": "24-count, cage-free",
+          "servingsPerPackage": 24
+        },
+        "walmart": {
+          "price": 4.89,
+          "packageLabel": "18-count",
+          "servingsPerPackage": 18
+        },
+        "noFrills": {
+          "price": 6.69,
+          "packageLabel": "12-count, pasture-raised",
+          "servingsPerPackage": 12
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 3.29,
+          "packageLabel": "18-count",
+          "servingsPerPackage": 18
+        },
+        "asda": {
+          "price": 2.99,
+          "packageLabel": "18-count",
+          "servingsPerPackage": 18
+        },
+        "aldi": {
+          "price": 3.89,
+          "packageLabel": "12-count, pasture-raised",
+          "servingsPerPackage": 12
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 6.29,
+          "packageLabel": "18-count",
+          "servingsPerPackage": 18
+        },
+        "coles": {
+          "price": 5.99,
+          "packageLabel": "18-count",
+          "servingsPerPackage": 18
+        },
+        "aldi": {
+          "price": 7.29,
+          "packageLabel": "12-count, pasture-raised",
+          "servingsPerPackage": 12
+        }
+      }
+    }
+  },
+  {
+    "id": "whole-milk-greek-yogurt",
+    "name": "Whole-Milk Greek Yogurt, Plain",
+    "category": "eggs-dairy",
+    "referenceServing": "1 cup (245g)",
+    "dietTags": [
+      "vegetarian",
+      "gluten-free",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 1.3,
+      "magnesiumMg": 19,
+      "vitaminDIU": 0,
+      "proteinG": 22,
+      "healthyFatG": 8
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 7,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 5.49,
+          "packageLabel": "32 oz tub",
+          "servingsPerPackage": 4
+        },
+        "walmart": {
+          "price": 3.98,
+          "packageLabel": "32 oz tub",
+          "servingsPerPackage": 4
+        },
+        "traderJoes": {
+          "price": 3.99,
+          "packageLabel": "32 oz tub",
+          "servingsPerPackage": 4
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 6.49,
+          "packageLabel": "900 g tub",
+          "servingsPerPackage": 4
+        },
+        "walmart": {
+          "price": 4.89,
+          "packageLabel": "900 g tub",
+          "servingsPerPackage": 4
+        },
+        "noFrills": {
+          "price": 4.49,
+          "packageLabel": "900 g tub",
+          "servingsPerPackage": 4
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 3.29,
+          "packageLabel": "900 g tub",
+          "servingsPerPackage": 4
+        },
+        "asda": {
+          "price": 2.99,
+          "packageLabel": "900 g tub",
+          "servingsPerPackage": 4
+        },
+        "aldi": {
+          "price": 2.49,
+          "packageLabel": "900 g tub",
+          "servingsPerPackage": 4
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 6.29,
+          "packageLabel": "900 g tub",
+          "servingsPerPackage": 4
+        },
+        "coles": {
+          "price": 5.99,
+          "packageLabel": "900 g tub",
+          "servingsPerPackage": 4
+        },
+        "aldi": {
+          "price": 4.79,
+          "packageLabel": "900 g tub",
+          "servingsPerPackage": 4
+        }
+      }
+    }
+  },
+  {
+    "id": "whole-milk",
+    "name": "Whole Milk",
+    "category": "eggs-dairy",
+    "referenceServing": "1 cup (244g)",
+    "dietTags": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "nutrients": {
+      "zincMg": 1.0,
+      "magnesiumMg": 24,
+      "vitaminDIU": 120,
+      "proteinG": 8,
+      "healthyFatG": 8
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 14,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 3.79,
+          "packageLabel": "1 gallon",
+          "servingsPerPackage": 16
+        },
+        "walmart": {
+          "price": 3.24,
+          "packageLabel": "1 gallon",
+          "servingsPerPackage": 16
+        },
+        "traderJoes": {
+          "price": 2.49,
+          "packageLabel": "1/2 gallon",
+          "servingsPerPackage": 8
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 4.49,
+          "packageLabel": "4 L",
+          "servingsPerPackage": 16
+        },
+        "walmart": {
+          "price": 3.99,
+          "packageLabel": "4 L",
+          "servingsPerPackage": 16
+        },
+        "noFrills": {
+          "price": 2.79,
+          "packageLabel": "2 L",
+          "servingsPerPackage": 8
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 2.69,
+          "packageLabel": "4 pints (2.3 L)",
+          "servingsPerPackage": 16
+        },
+        "asda": {
+          "price": 2.49,
+          "packageLabel": "4 pints (2.3 L)",
+          "servingsPerPackage": 16
+        },
+        "aldi": {
+          "price": 1.69,
+          "packageLabel": "2 pints (1.1 L)",
+          "servingsPerPackage": 8
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 4.99,
+          "packageLabel": "3 L",
+          "servingsPerPackage": 16
+        },
+        "coles": {
+          "price": 4.89,
+          "packageLabel": "3 L",
+          "servingsPerPackage": 16
+        },
+        "aldi": {
+          "price": 2.99,
+          "packageLabel": "1.5 L",
+          "servingsPerPackage": 8
+        }
+      }
+    }
+  },
+  {
+    "id": "sharp-cheddar-cheese",
+    "name": "Sharp Cheddar Cheese",
+    "category": "eggs-dairy",
+    "referenceServing": "1 oz (28g)",
+    "dietTags": [
+      "vegetarian",
+      "gluten-free",
+      "keto"
+    ],
+    "nutrients": {
+      "zincMg": 1.0,
+      "magnesiumMg": 8,
+      "vitaminDIU": 0,
+      "proteinG": 7,
+      "healthyFatG": 9
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 7,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 8.99,
+          "packageLabel": "2 lb (32 oz) block",
+          "servingsPerPackage": 32
+        },
+        "walmart": {
+          "price": 2.48,
+          "packageLabel": "8 oz block",
+          "servingsPerPackage": 8
+        },
+        "traderJoes": {
+          "price": 3.49,
+          "packageLabel": "8 oz block",
+          "servingsPerPackage": 8
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 10.49,
+          "packageLabel": "900 g block",
+          "servingsPerPackage": 32
+        },
+        "walmart": {
+          "price": 2.99,
+          "packageLabel": "225 g block",
+          "servingsPerPackage": 8
+        },
+        "noFrills": {
+          "price": 3.89,
+          "packageLabel": "225 g block",
+          "servingsPerPackage": 8
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 1.99,
+          "packageLabel": "225 g block",
+          "servingsPerPackage": 8
+        },
+        "asda": {
+          "price": 1.79,
+          "packageLabel": "225 g block",
+          "servingsPerPackage": 8
+        },
+        "aldi": {
+          "price": 2.29,
+          "packageLabel": "225 g block",
+          "servingsPerPackage": 8
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 3.89,
+          "packageLabel": "225 g block",
+          "servingsPerPackage": 8
+        },
+        "coles": {
+          "price": 3.69,
+          "packageLabel": "225 g block",
+          "servingsPerPackage": 8
+        },
+        "aldi": {
+          "price": 4.29,
+          "packageLabel": "225 g block",
+          "servingsPerPackage": 8
+        }
+      }
+    }
+  },
+  {
+    "id": "cottage-cheese-4pct",
+    "name": "Cottage Cheese, 4% Whole Milk",
+    "category": "eggs-dairy",
+    "referenceServing": "1/2 cup (113g)",
+    "dietTags": [
+      "vegetarian",
+      "gluten-free",
+      "keto"
+    ],
+    "nutrients": {
+      "zincMg": 0.4,
+      "magnesiumMg": 5,
+      "vitaminDIU": 0,
+      "proteinG": 12,
+      "healthyFatG": 5
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 7,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 6.49,
+          "packageLabel": "3 lb (48 oz) tub",
+          "servingsPerPackage": 12
+        },
+        "walmart": {
+          "price": 3.24,
+          "packageLabel": "24 oz tub",
+          "servingsPerPackage": 6
+        },
+        "traderJoes": {
+          "price": 2.99,
+          "packageLabel": "16 oz tub",
+          "servingsPerPackage": 4
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 7.69,
+          "packageLabel": "1.4 kg tub",
+          "servingsPerPackage": 12
+        },
+        "walmart": {
+          "price": 3.99,
+          "packageLabel": "680 g tub",
+          "servingsPerPackage": 6
+        },
+        "noFrills": {
+          "price": 3.29,
+          "packageLabel": "450 g tub",
+          "servingsPerPackage": 4
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 2.69,
+          "packageLabel": "680 g tub",
+          "servingsPerPackage": 6
+        },
+        "asda": {
+          "price": 2.49,
+          "packageLabel": "680 g tub",
+          "servingsPerPackage": 6
+        },
+        "aldi": {
+          "price": 1.89,
+          "packageLabel": "450 g tub",
+          "servingsPerPackage": 4
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 4.99,
+          "packageLabel": "680 g tub",
+          "servingsPerPackage": 6
+        },
+        "coles": {
+          "price": 4.89,
+          "packageLabel": "680 g tub",
+          "servingsPerPackage": 6
+        },
+        "aldi": {
+          "price": 3.69,
+          "packageLabel": "450 g tub",
+          "servingsPerPackage": 4
+        }
+      }
+    }
+  },
+  {
+    "id": "plain-whole-milk-kefir",
+    "name": "Plain Whole-Milk Kefir",
+    "category": "eggs-dairy",
+    "referenceServing": "1 cup (243g)",
+    "dietTags": [
+      "vegetarian",
+      "gluten-free"
+    ],
+    "nutrients": {
+      "zincMg": 0.8,
+      "magnesiumMg": 21,
+      "vitaminDIU": 0,
+      "proteinG": 9,
+      "healthyFatG": 6
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 7,
+    "stores": {
+      "us": {
+        "costco": null,
+        "walmart": {
+          "price": 4.48,
+          "packageLabel": "32 oz bottle",
+          "servingsPerPackage": 4
+        },
+        "traderJoes": {
+          "price": 3.99,
+          "packageLabel": "32 oz bottle",
+          "servingsPerPackage": 4
+        }
+      },
+      "ca": {
+        "costco": null,
+        "walmart": {
+          "price": 5.49,
+          "packageLabel": "950 ml bottle",
+          "servingsPerPackage": 4
+        },
+        "noFrills": {
+          "price": 4.49,
+          "packageLabel": "950 ml bottle",
+          "servingsPerPackage": 4
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 3.69,
+          "packageLabel": "950 ml bottle",
+          "servingsPerPackage": 4
+        },
+        "asda": {
+          "price": 3.29,
+          "packageLabel": "950 ml bottle",
+          "servingsPerPackage": 4
+        },
+        "aldi": {
+          "price": 2.49,
+          "packageLabel": "950 ml bottle",
+          "servingsPerPackage": 4
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 6.99,
+          "packageLabel": "950 ml bottle",
+          "servingsPerPackage": 4
+        },
+        "coles": {
+          "price": 6.69,
+          "packageLabel": "950 ml bottle",
+          "servingsPerPackage": 4
+        },
+        "aldi": {
+          "price": 4.79,
+          "packageLabel": "950 ml bottle",
+          "servingsPerPackage": 4
+        }
+      }
+    }
+  },
+  {
+    "id": "pumpkin-seeds-pepitas",
+    "name": "Pumpkin Seeds (Pepitas), Raw",
+    "category": "nuts-seeds",
+    "referenceServing": "1 oz (28g)",
+    "dietTags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "gluten-free",
+      "keto",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 2.2,
+      "magnesiumMg": 156,
+      "vitaminDIU": 0,
+      "proteinG": 7,
+      "healthyFatG": 13
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 7,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 11.99,
+          "packageLabel": "2 lb (32 oz) bag",
+          "servingsPerPackage": 32
+        },
+        "walmart": {
+          "price": 5.98,
+          "packageLabel": "16 oz bag",
+          "servingsPerPackage": 16
+        },
+        "traderJoes": {
+          "price": 3.49,
+          "packageLabel": "10 oz bag",
+          "servingsPerPackage": 10
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 13.49,
+          "packageLabel": "900 g bag",
+          "servingsPerPackage": 32
+        },
+        "walmart": {
+          "price": 6.99,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 16
+        },
+        "noFrills": {
+          "price": 3.69,
+          "packageLabel": "280 g bag",
+          "servingsPerPackage": 10
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 4.99,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 16
+        },
+        "asda": {
+          "price": 4.69,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 16
+        },
+        "aldi": {
+          "price": 2.29,
+          "packageLabel": "280 g bag",
+          "servingsPerPackage": 10
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 7.99,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 16
+        },
+        "coles": {
+          "price": 7.79,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 16
+        },
+        "aldi": {
+          "price": 3.69,
+          "packageLabel": "280 g bag",
+          "servingsPerPackage": 10
+        }
+      }
+    }
+  },
+  {
+    "id": "brazil-nuts",
+    "name": "Brazil Nuts",
+    "category": "nuts-seeds",
+    "referenceServing": "1 oz (28g, ~6 nuts)",
+    "dietTags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "gluten-free",
+      "keto",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 1.0,
+      "magnesiumMg": 107,
+      "vitaminDIU": 0,
+      "proteinG": 4,
+      "healthyFatG": 19
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 3,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 12.99,
+          "packageLabel": "1.5 lb (24 oz) bag",
+          "servingsPerPackage": 24
+        },
+        "walmart": {
+          "price": 6.98,
+          "packageLabel": "8 oz bag",
+          "servingsPerPackage": 8
+        },
+        "traderJoes": {
+          "price": 5.99,
+          "packageLabel": "8 oz bag",
+          "servingsPerPackage": 8
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 14.49,
+          "packageLabel": "680 g bag",
+          "servingsPerPackage": 24
+        },
+        "walmart": {
+          "price": 8.29,
+          "packageLabel": "225 g bag",
+          "servingsPerPackage": 8
+        },
+        "noFrills": {
+          "price": 6.29,
+          "packageLabel": "225 g bag",
+          "servingsPerPackage": 8
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 5.89,
+          "packageLabel": "225 g bag",
+          "servingsPerPackage": 8
+        },
+        "asda": {
+          "price": 5.49,
+          "packageLabel": "225 g bag",
+          "servingsPerPackage": 8
+        },
+        "aldi": {
+          "price": 3.99,
+          "packageLabel": "225 g bag",
+          "servingsPerPackage": 8
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 9.49,
+          "packageLabel": "225 g bag",
+          "servingsPerPackage": 8
+        },
+        "coles": {
+          "price": 8.99,
+          "packageLabel": "225 g bag",
+          "servingsPerPackage": 8
+        },
+        "aldi": {
+          "price": 6.29,
+          "packageLabel": "225 g bag",
+          "servingsPerPackage": 8
+        }
+      }
+    }
+  },
+  {
+    "id": "cashews-raw",
+    "name": "Cashews, Raw",
+    "category": "nuts-seeds",
+    "referenceServing": "1 oz (28g)",
+    "dietTags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "gluten-free",
+      "keto",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 1.6,
+      "magnesiumMg": 74,
+      "vitaminDIU": 0,
+      "proteinG": 5,
+      "healthyFatG": 12
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 7,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 14.99,
+          "packageLabel": "2.5 lb (40 oz) bag",
+          "servingsPerPackage": 40
+        },
+        "walmart": {
+          "price": 5.24,
+          "packageLabel": "10 oz bag",
+          "servingsPerPackage": 10
+        },
+        "traderJoes": {
+          "price": 4.49,
+          "packageLabel": "8 oz bag",
+          "servingsPerPackage": 8
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 16.79,
+          "packageLabel": "1.1 kg bag",
+          "servingsPerPackage": 40
+        },
+        "walmart": {
+          "price": 6.29,
+          "packageLabel": "280 g bag",
+          "servingsPerPackage": 10
+        },
+        "noFrills": {
+          "price": 4.69,
+          "packageLabel": "225 g bag",
+          "servingsPerPackage": 8
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 4.49,
+          "packageLabel": "280 g bag",
+          "servingsPerPackage": 10
+        },
+        "asda": {
+          "price": 3.99,
+          "packageLabel": "280 g bag",
+          "servingsPerPackage": 10
+        },
+        "aldi": {
+          "price": 2.99,
+          "packageLabel": "225 g bag",
+          "servingsPerPackage": 8
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 6.99,
+          "packageLabel": "280 g bag",
+          "servingsPerPackage": 10
+        },
+        "coles": {
+          "price": 6.79,
+          "packageLabel": "280 g bag",
+          "servingsPerPackage": 10
+        },
+        "aldi": {
+          "price": 4.69,
+          "packageLabel": "225 g bag",
+          "servingsPerPackage": 8
+        }
+      }
+    }
+  },
+  {
+    "id": "tahini-sesame-paste",
+    "name": "Tahini (Sesame Paste)",
+    "category": "nuts-seeds",
+    "referenceServing": "1 oz (2 tbsp / 28g)",
+    "dietTags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "gluten-free",
+      "keto",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 1.4,
+      "magnesiumMg": 32,
+      "vitaminDIU": 0,
+      "proteinG": 5,
+      "healthyFatG": 8
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 7,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 8.99,
+          "packageLabel": "16 oz jar",
+          "servingsPerPackage": 16
+        },
+        "walmart": {
+          "price": 6.98,
+          "packageLabel": "16 oz jar",
+          "servingsPerPackage": 16
+        },
+        "traderJoes": {
+          "price": 5.99,
+          "packageLabel": "16 oz jar",
+          "servingsPerPackage": 16
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 9.99,
+          "packageLabel": "450 g jar",
+          "servingsPerPackage": 16
+        },
+        "walmart": {
+          "price": 8.29,
+          "packageLabel": "450 g jar",
+          "servingsPerPackage": 16
+        },
+        "noFrills": {
+          "price": 6.29,
+          "packageLabel": "450 g jar",
+          "servingsPerPackage": 16
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 5.89,
+          "packageLabel": "450 g jar",
+          "servingsPerPackage": 16
+        },
+        "asda": {
+          "price": 5.49,
+          "packageLabel": "450 g jar",
+          "servingsPerPackage": 16
+        },
+        "aldi": {
+          "price": 3.99,
+          "packageLabel": "450 g jar",
+          "servingsPerPackage": 16
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 9.49,
+          "packageLabel": "450 g jar",
+          "servingsPerPackage": 16
+        },
+        "coles": {
+          "price": 8.99,
+          "packageLabel": "450 g jar",
+          "servingsPerPackage": 16
+        },
+        "aldi": {
+          "price": 6.29,
+          "packageLabel": "450 g jar",
+          "servingsPerPackage": 16
+        }
+      }
+    }
+  },
+  {
+    "id": "chia-seeds",
+    "name": "Chia Seeds",
+    "category": "nuts-seeds",
+    "referenceServing": "1 oz (28g)",
+    "dietTags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "gluten-free",
+      "keto",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 1.3,
+      "magnesiumMg": 95,
+      "vitaminDIU": 0,
+      "proteinG": 4,
+      "healthyFatG": 9
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 7,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 11.99,
+          "packageLabel": "3 lb (48 oz) bag",
+          "servingsPerPackage": 48
+        },
+        "walmart": {
+          "price": 4.98,
+          "packageLabel": "12 oz bag",
+          "servingsPerPackage": 12
+        },
+        "traderJoes": {
+          "price": 3.99,
+          "packageLabel": "12 oz bag",
+          "servingsPerPackage": 12
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 13.49,
+          "packageLabel": "1.4 kg bag",
+          "servingsPerPackage": 48
+        },
+        "walmart": {
+          "price": 5.89,
+          "packageLabel": "340 g bag",
+          "servingsPerPackage": 12
+        },
+        "noFrills": {
+          "price": 4.29,
+          "packageLabel": "340 g bag",
+          "servingsPerPackage": 12
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 4.29,
+          "packageLabel": "340 g bag",
+          "servingsPerPackage": 12
+        },
+        "asda": {
+          "price": 3.89,
+          "packageLabel": "340 g bag",
+          "servingsPerPackage": 12
+        },
+        "aldi": {
+          "price": 2.69,
+          "packageLabel": "340 g bag",
+          "servingsPerPackage": 12
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 6.69,
+          "packageLabel": "340 g bag",
+          "servingsPerPackage": 12
+        },
+        "coles": {
+          "price": 6.49,
+          "packageLabel": "340 g bag",
+          "servingsPerPackage": 12
+        },
+        "aldi": {
+          "price": 4.29,
+          "packageLabel": "340 g bag",
+          "servingsPerPackage": 12
+        }
+      }
+    }
+  },
+  {
+    "id": "almonds-raw",
+    "name": "Almonds, Raw",
+    "category": "nuts-seeds",
+    "referenceServing": "1 oz (28g)",
+    "dietTags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "gluten-free",
+      "keto",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 0.9,
+      "magnesiumMg": 76,
+      "vitaminDIU": 0,
+      "proteinG": 6,
+      "healthyFatG": 14
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 7,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 12.99,
+          "packageLabel": "3 lb (48 oz) bag",
+          "servingsPerPackage": 48
+        },
+        "walmart": {
+          "price": 6.48,
+          "packageLabel": "16 oz bag",
+          "servingsPerPackage": 16
+        },
+        "traderJoes": {
+          "price": 6.49,
+          "packageLabel": "16 oz bag",
+          "servingsPerPackage": 16
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 14.49,
+          "packageLabel": "1.4 kg bag",
+          "servingsPerPackage": 48
+        },
+        "walmart": {
+          "price": 7.69,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 16
+        },
+        "noFrills": {
+          "price": 6.79,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 16
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 5.49,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 16
+        },
+        "asda": {
+          "price": 4.99,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 16
+        },
+        "aldi": {
+          "price": 4.49,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 16
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 8.79,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 16
+        },
+        "coles": {
+          "price": 8.49,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 16
+        },
+        "aldi": {
+          "price": 6.79,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 16
+        }
+      }
+    }
+  },
+  {
+    "id": "broccoli-crowns",
+    "name": "Broccoli Crowns",
+    "category": "vegetables",
+    "referenceServing": "1 cup chopped (91g)",
+    "dietTags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "gluten-free",
+      "keto",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 0.4,
+      "magnesiumMg": 19,
+      "vitaminDIU": 0,
+      "proteinG": 2.6,
+      "healthyFatG": 0.3
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 14,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 5.99,
+          "packageLabel": "4 lb bag",
+          "servingsPerPackage": 20
+        },
+        "walmart": {
+          "price": 1.98,
+          "packageLabel": "1 lb (per lb)",
+          "servingsPerPackage": 5
+        },
+        "traderJoes": {
+          "price": 2.29,
+          "packageLabel": "12 oz florets bag",
+          "servingsPerPackage": 4
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 7.29,
+          "packageLabel": "1.8 kg bag",
+          "servingsPerPackage": 20
+        },
+        "walmart": {
+          "price": 2.49,
+          "packageLabel": "500 g (approx.)",
+          "servingsPerPackage": 5
+        },
+        "noFrills": {
+          "price": 2.69,
+          "packageLabel": "340 g florets bag",
+          "servingsPerPackage": 4
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 1.49,
+          "packageLabel": "500 g (approx.)",
+          "servingsPerPackage": 5
+        },
+        "asda": {
+          "price": 1.29,
+          "packageLabel": "500 g (approx.)",
+          "servingsPerPackage": 5
+        },
+        "aldi": {
+          "price": 1.29,
+          "packageLabel": "340 g florets bag",
+          "servingsPerPackage": 4
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 2.79,
+          "packageLabel": "500 g (approx.)",
+          "servingsPerPackage": 5
+        },
+        "coles": {
+          "price": 2.69,
+          "packageLabel": "500 g (approx.)",
+          "servingsPerPackage": 5
+        },
+        "aldi": {
+          "price": 2.49,
+          "packageLabel": "340 g florets bag",
+          "servingsPerPackage": 4
+        }
+      }
+    }
+  },
+  {
+    "id": "brussels-sprouts",
+    "name": "Brussels Sprouts",
+    "category": "vegetables",
+    "referenceServing": "1 cup (88g)",
+    "dietTags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "gluten-free",
+      "keto",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 0.4,
+      "magnesiumMg": 23,
+      "vitaminDIU": 0,
+      "proteinG": 3,
+      "healthyFatG": 0.3
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 14,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 6.49,
+          "packageLabel": "3 lb bag",
+          "servingsPerPackage": 15
+        },
+        "walmart": {
+          "price": 2.98,
+          "packageLabel": "1 lb bag",
+          "servingsPerPackage": 5
+        },
+        "traderJoes": {
+          "price": 2.49,
+          "packageLabel": "10 oz bag",
+          "servingsPerPackage": 3
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 7.99,
+          "packageLabel": "1.4 kg bag",
+          "servingsPerPackage": 15
+        },
+        "walmart": {
+          "price": 3.89,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 5
+        },
+        "noFrills": {
+          "price": 2.89,
+          "packageLabel": "280 g bag",
+          "servingsPerPackage": 3
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 2.29,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 5
+        },
+        "asda": {
+          "price": 1.99,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 5
+        },
+        "aldi": {
+          "price": 1.49,
+          "packageLabel": "280 g bag",
+          "servingsPerPackage": 3
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 4.29,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 5
+        },
+        "coles": {
+          "price": 3.99,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 5
+        },
+        "aldi": {
+          "price": 2.79,
+          "packageLabel": "280 g bag",
+          "servingsPerPackage": 3
+        }
+      }
+    }
+  },
+  {
+    "id": "green-cabbage",
+    "name": "Green Cabbage",
+    "category": "vegetables",
+    "referenceServing": "1 cup shredded (89g)",
+    "dietTags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "gluten-free",
+      "keto",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 0.2,
+      "magnesiumMg": 11,
+      "vitaminDIU": 0,
+      "proteinG": 1,
+      "healthyFatG": 0.1
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 14,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 2.49,
+          "packageLabel": "1 head, ~3 lb",
+          "servingsPerPackage": 15
+        },
+        "walmart": {
+          "price": 0.68,
+          "packageLabel": "1 lb (per lb)",
+          "servingsPerPackage": 5
+        },
+        "traderJoes": null
+      },
+      "ca": {
+        "costco": {
+          "price": 2.99,
+          "packageLabel": "1 head, ~1.4 kg",
+          "servingsPerPackage": 15
+        },
+        "walmart": {
+          "price": 0.89,
+          "packageLabel": "500 g (approx.)",
+          "servingsPerPackage": 5
+        },
+        "noFrills": {
+          "price": 0.79,
+          "packageLabel": "500 g (approx.)",
+          "servingsPerPackage": 5
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 0.49,
+          "packageLabel": "500 g (approx.)",
+          "servingsPerPackage": 5
+        },
+        "asda": {
+          "price": 0.49,
+          "packageLabel": "500 g (approx.)",
+          "servingsPerPackage": 5
+        },
+        "aldi": {
+          "price": 0.49,
+          "packageLabel": "500 g (approx.)",
+          "servingsPerPackage": 5
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 0.99,
+          "packageLabel": "500 g (approx.)",
+          "servingsPerPackage": 5
+        },
+        "coles": {
+          "price": 0.89,
+          "packageLabel": "500 g (approx.)",
+          "servingsPerPackage": 5
+        },
+        "aldi": {
+          "price": 0.79,
+          "packageLabel": "500 g (approx.)",
+          "servingsPerPackage": 5
+        }
+      }
+    }
+  },
+  {
+    "id": "curly-kale",
+    "name": "Curly Kale",
+    "category": "vegetables",
+    "referenceServing": "1 cup chopped (67g)",
+    "dietTags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "gluten-free",
+      "keto",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 0.3,
+      "magnesiumMg": 23,
+      "vitaminDIU": 0,
+      "proteinG": 2,
+      "healthyFatG": 0.3
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 14,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 4.49,
+          "packageLabel": "1 lb clamshell",
+          "servingsPerPackage": 7
+        },
+        "walmart": {
+          "price": 1.98,
+          "packageLabel": "1 bunch (~10.5 oz)",
+          "servingsPerPackage": 4
+        },
+        "traderJoes": {
+          "price": 1.99,
+          "packageLabel": "5 oz bag",
+          "servingsPerPackage": 2
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 5.49,
+          "packageLabel": "450 g clamshell",
+          "servingsPerPackage": 7
+        },
+        "walmart": {
+          "price": 2.49,
+          "packageLabel": "1 bunch (~300 g)",
+          "servingsPerPackage": 4
+        },
+        "noFrills": {
+          "price": 2.29,
+          "packageLabel": "140 g bag",
+          "servingsPerPackage": 2
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 1.49,
+          "packageLabel": "1 bunch (~300 g)",
+          "servingsPerPackage": 4
+        },
+        "asda": {
+          "price": 1.29,
+          "packageLabel": "1 bunch (~300 g)",
+          "servingsPerPackage": 4
+        },
+        "aldi": {
+          "price": 1.29,
+          "packageLabel": "140 g bag",
+          "servingsPerPackage": 2
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 2.79,
+          "packageLabel": "1 bunch (~300 g)",
+          "servingsPerPackage": 4
+        },
+        "coles": {
+          "price": 2.69,
+          "packageLabel": "1 bunch (~300 g)",
+          "servingsPerPackage": 4
+        },
+        "aldi": {
+          "price": 2.29,
+          "packageLabel": "140 g bag",
+          "servingsPerPackage": 2
+        }
+      }
+    }
+  },
+  {
+    "id": "garlic",
+    "name": "Garlic",
+    "category": "vegetables",
+    "referenceServing": "1 tbsp minced (9g, ~3 cloves)",
+    "dietTags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "gluten-free",
+      "keto",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 0.1,
+      "magnesiumMg": 3,
+      "vitaminDIU": 0,
+      "proteinG": 0.3,
+      "healthyFatG": 0
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 21,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 5.99,
+          "packageLabel": "3 lb bag",
+          "servingsPerPackage": 151
+        },
+        "walmart": {
+          "price": 1.48,
+          "packageLabel": "3-count bulbs",
+          "servingsPerPackage": 16
+        },
+        "traderJoes": {
+          "price": 1.99,
+          "packageLabel": "3-count bulbs",
+          "servingsPerPackage": 16
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 7.29,
+          "packageLabel": "1.4 kg bag",
+          "servingsPerPackage": 151
+        },
+        "walmart": {
+          "price": 1.89,
+          "packageLabel": "3-count bulbs",
+          "servingsPerPackage": 16
+        },
+        "noFrills": {
+          "price": 2.29,
+          "packageLabel": "3-count bulbs",
+          "servingsPerPackage": 16
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 0.99,
+          "packageLabel": "3-count bulbs",
+          "servingsPerPackage": 16
+        },
+        "asda": {
+          "price": 0.99,
+          "packageLabel": "3-count bulbs",
+          "servingsPerPackage": 16
+        },
+        "aldi": {
+          "price": 1.29,
+          "packageLabel": "3-count bulbs",
+          "servingsPerPackage": 16
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 1.99,
+          "packageLabel": "3-count bulbs",
+          "servingsPerPackage": 16
+        },
+        "coles": {
+          "price": 1.99,
+          "packageLabel": "3-count bulbs",
+          "servingsPerPackage": 16
+        },
+        "aldi": {
+          "price": 2.29,
+          "packageLabel": "3-count bulbs",
+          "servingsPerPackage": 16
+        }
+      }
+    }
+  },
+  {
+    "id": "baby-spinach",
+    "name": "Baby Spinach",
+    "category": "vegetables",
+    "referenceServing": "1 cup (30g)",
+    "dietTags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "gluten-free",
+      "keto",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 0.2,
+      "magnesiumMg": 24,
+      "vitaminDIU": 0,
+      "proteinG": 0.9,
+      "healthyFatG": 0.1
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 14,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 4.29,
+          "packageLabel": "1 lb clamshell",
+          "servingsPerPackage": 15
+        },
+        "walmart": {
+          "price": 2.48,
+          "packageLabel": "5 oz bag",
+          "servingsPerPackage": 5
+        },
+        "traderJoes": {
+          "price": 2.29,
+          "packageLabel": "5 oz bag",
+          "servingsPerPackage": 5
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 5.29,
+          "packageLabel": "450 g clamshell",
+          "servingsPerPackage": 15
+        },
+        "walmart": {
+          "price": 3.29,
+          "packageLabel": "140 g bag",
+          "servingsPerPackage": 5
+        },
+        "noFrills": {
+          "price": 2.69,
+          "packageLabel": "140 g bag",
+          "servingsPerPackage": 5
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 1.79,
+          "packageLabel": "140 g bag",
+          "servingsPerPackage": 5
+        },
+        "asda": {
+          "price": 1.69,
+          "packageLabel": "140 g bag",
+          "servingsPerPackage": 5
+        },
+        "aldi": {
+          "price": 1.29,
+          "packageLabel": "140 g bag",
+          "servingsPerPackage": 5
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 3.49,
+          "packageLabel": "140 g bag",
+          "servingsPerPackage": 5
+        },
+        "coles": {
+          "price": 3.29,
+          "packageLabel": "140 g bag",
+          "servingsPerPackage": 5
+        },
+        "aldi": {
+          "price": 2.49,
+          "packageLabel": "140 g bag",
+          "servingsPerPackage": 5
+        }
+      }
+    }
+  },
+  {
+    "id": "avocado",
+    "name": "Avocado",
+    "category": "fruits",
+    "referenceServing": "1/2 medium (100g)",
+    "dietTags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "gluten-free",
+      "keto",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 0.6,
+      "magnesiumMg": 29,
+      "vitaminDIU": 0,
+      "proteinG": 2,
+      "healthyFatG": 15
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 14,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 6.99,
+          "packageLabel": "6-count bag",
+          "servingsPerPackage": 12
+        },
+        "walmart": {
+          "price": 0.98,
+          "packageLabel": "1 each",
+          "servingsPerPackage": 2
+        },
+        "traderJoes": {
+          "price": 1.49,
+          "packageLabel": "1 each",
+          "servingsPerPackage": 2
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 8.69,
+          "packageLabel": "6-count bag",
+          "servingsPerPackage": 12
+        },
+        "walmart": {
+          "price": 1.29,
+          "packageLabel": "1 each",
+          "servingsPerPackage": 2
+        },
+        "noFrills": {
+          "price": 1.69,
+          "packageLabel": "1 each",
+          "servingsPerPackage": 2
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 0.69,
+          "packageLabel": "1 each",
+          "servingsPerPackage": 2
+        },
+        "asda": {
+          "price": 0.69,
+          "packageLabel": "1 each",
+          "servingsPerPackage": 2
+        },
+        "aldi": {
+          "price": 0.89,
+          "packageLabel": "1 each",
+          "servingsPerPackage": 2
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 1.29,
+          "packageLabel": "1 each",
+          "servingsPerPackage": 2
+        },
+        "coles": {
+          "price": 1.29,
+          "packageLabel": "1 each",
+          "servingsPerPackage": 2
+        },
+        "aldi": {
+          "price": 1.69,
+          "packageLabel": "1 each",
+          "servingsPerPackage": 2
+        }
+      }
+    }
+  },
+  {
+    "id": "pomegranate-arils",
+    "name": "Pomegranate Arils",
+    "category": "fruits",
+    "referenceServing": "1/2 cup (87g)",
+    "dietTags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "gluten-free",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 0.2,
+      "magnesiumMg": 9,
+      "vitaminDIU": 0,
+      "proteinG": 0.7,
+      "healthyFatG": 0.2
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 7,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 8.99,
+          "packageLabel": "16 oz, 2-pack",
+          "servingsPerPackage": 5
+        },
+        "walmart": {
+          "price": 4.98,
+          "packageLabel": "8 oz",
+          "servingsPerPackage": 3
+        },
+        "traderJoes": {
+          "price": 3.99,
+          "packageLabel": "8 oz",
+          "servingsPerPackage": 3
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 10.99,
+          "packageLabel": "450 g, 2-pack",
+          "servingsPerPackage": 5
+        },
+        "walmart": {
+          "price": 6.49,
+          "packageLabel": "225 g",
+          "servingsPerPackage": 3
+        },
+        "noFrills": {
+          "price": 4.69,
+          "packageLabel": "225 g",
+          "servingsPerPackage": 3
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 3.69,
+          "packageLabel": "225 g",
+          "servingsPerPackage": 3
+        },
+        "asda": {
+          "price": 3.29,
+          "packageLabel": "225 g",
+          "servingsPerPackage": 3
+        },
+        "aldi": {
+          "price": 2.29,
+          "packageLabel": "225 g",
+          "servingsPerPackage": 3
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 6.99,
+          "packageLabel": "225 g",
+          "servingsPerPackage": 3
+        },
+        "coles": {
+          "price": 6.79,
+          "packageLabel": "225 g",
+          "servingsPerPackage": 3
+        },
+        "aldi": {
+          "price": 4.49,
+          "packageLabel": "225 g",
+          "servingsPerPackage": 3
+        }
+      }
+    }
+  },
+  {
+    "id": "blueberries",
+    "name": "Blueberries",
+    "category": "fruits",
+    "referenceServing": "1 cup (148g)",
+    "dietTags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "gluten-free",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 0.2,
+      "magnesiumMg": 9,
+      "vitaminDIU": 0,
+      "proteinG": 1,
+      "healthyFatG": 0.5
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 7,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 7.99,
+          "packageLabel": "2 lb clamshell",
+          "servingsPerPackage": 6
+        },
+        "walmart": {
+          "price": 2.98,
+          "packageLabel": "1 pint (~10.6 oz)",
+          "servingsPerPackage": 2
+        },
+        "traderJoes": {
+          "price": 2.99,
+          "packageLabel": "6 oz clamshell",
+          "servingsPerPackage": 1
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 9.89,
+          "packageLabel": "900 g clamshell",
+          "servingsPerPackage": 6
+        },
+        "walmart": {
+          "price": 3.89,
+          "packageLabel": "300 g punnet",
+          "servingsPerPackage": 2
+        },
+        "noFrills": {
+          "price": 3.49,
+          "packageLabel": "170 g clamshell",
+          "servingsPerPackage": 1
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 2.29,
+          "packageLabel": "300 g punnet",
+          "servingsPerPackage": 2
+        },
+        "asda": {
+          "price": 1.99,
+          "packageLabel": "300 g punnet",
+          "servingsPerPackage": 2
+        },
+        "aldi": {
+          "price": 1.69,
+          "packageLabel": "170 g clamshell",
+          "servingsPerPackage": 1
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 4.29,
+          "packageLabel": "300 g punnet",
+          "servingsPerPackage": 2
+        },
+        "coles": {
+          "price": 3.99,
+          "packageLabel": "300 g punnet",
+          "servingsPerPackage": 2
+        },
+        "aldi": {
+          "price": 3.29,
+          "packageLabel": "170 g clamshell",
+          "servingsPerPackage": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "banana",
+    "name": "Banana",
+    "category": "fruits",
+    "referenceServing": "1 medium (118g)",
+    "dietTags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "gluten-free",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 0.2,
+      "magnesiumMg": 32,
+      "vitaminDIU": 0,
+      "proteinG": 1.3,
+      "healthyFatG": 0.4
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 14,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 1.89,
+          "packageLabel": "3 lb bag (~7 bananas)",
+          "servingsPerPackage": 7
+        },
+        "walmart": {
+          "price": 0.58,
+          "packageLabel": "1 lb (per lb)",
+          "servingsPerPackage": 4
+        },
+        "traderJoes": {
+          "price": 0.23,
+          "packageLabel": "1 each",
+          "servingsPerPackage": 1
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 2.29,
+          "packageLabel": "1.4 kg bag (~7 bananas)",
+          "servingsPerPackage": 7
+        },
+        "walmart": {
+          "price": 0.79,
+          "packageLabel": "500 g (approx.)",
+          "servingsPerPackage": 4
+        },
+        "noFrills": {
+          "price": 0.29,
+          "packageLabel": "1 each",
+          "servingsPerPackage": 1
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 0.49,
+          "packageLabel": "500 g (approx.)",
+          "servingsPerPackage": 4
+        },
+        "asda": {
+          "price": 0.29,
+          "packageLabel": "500 g (approx.)",
+          "servingsPerPackage": 4
+        },
+        "aldi": {
+          "price": 0.29,
+          "packageLabel": "1 each",
+          "servingsPerPackage": 1
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 0.79,
+          "packageLabel": "500 g (approx.)",
+          "servingsPerPackage": 4
+        },
+        "coles": {
+          "price": 0.79,
+          "packageLabel": "500 g (approx.)",
+          "servingsPerPackage": 4
+        },
+        "aldi": {
+          "price": 0.29,
+          "packageLabel": "1 each",
+          "servingsPerPackage": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "navel-orange",
+    "name": "Navel Orange",
+    "category": "fruits",
+    "referenceServing": "1 medium (131g)",
+    "dietTags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "gluten-free",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 0.1,
+      "magnesiumMg": 13,
+      "vitaminDIU": 0,
+      "proteinG": 1.2,
+      "healthyFatG": 0.2
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 14,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 8.99,
+          "packageLabel": "8 lb bag (~20 oranges)",
+          "servingsPerPackage": 20
+        },
+        "walmart": {
+          "price": 1.24,
+          "packageLabel": "1 lb (per lb)",
+          "servingsPerPackage": 3
+        },
+        "traderJoes": {
+          "price": 0.99,
+          "packageLabel": "1 each",
+          "servingsPerPackage": 1
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 10.99,
+          "packageLabel": "3.6 kg bag (~20 oranges)",
+          "servingsPerPackage": 20
+        },
+        "walmart": {
+          "price": 1.69,
+          "packageLabel": "500 g (approx.)",
+          "servingsPerPackage": 3
+        },
+        "noFrills": {
+          "price": 1.29,
+          "packageLabel": "1 each",
+          "servingsPerPackage": 1
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 0.89,
+          "packageLabel": "500 g (approx.)",
+          "servingsPerPackage": 3
+        },
+        "asda": {
+          "price": 0.79,
+          "packageLabel": "500 g (approx.)",
+          "servingsPerPackage": 3
+        },
+        "aldi": {
+          "price": 0.49,
+          "packageLabel": "1 each",
+          "servingsPerPackage": 1
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 1.79,
+          "packageLabel": "500 g (approx.)",
+          "servingsPerPackage": 3
+        },
+        "coles": {
+          "price": 1.69,
+          "packageLabel": "500 g (approx.)",
+          "servingsPerPackage": 3
+        },
+        "aldi": {
+          "price": 0.99,
+          "packageLabel": "1 each",
+          "servingsPerPackage": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "watermelon-cubes",
+    "name": "Watermelon Cubes",
+    "category": "fruits",
+    "referenceServing": "1 cup (152g)",
+    "dietTags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "gluten-free",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 0.1,
+      "magnesiumMg": 15,
+      "vitaminDIU": 0,
+      "proteinG": 0.9,
+      "healthyFatG": 0.2
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 7,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 9.99,
+          "packageLabel": "4 lb container",
+          "servingsPerPackage": 12
+        },
+        "walmart": {
+          "price": 3.98,
+          "packageLabel": "4-cup container",
+          "servingsPerPackage": 4
+        },
+        "traderJoes": {
+          "price": 2.99,
+          "packageLabel": "12 oz cup",
+          "servingsPerPackage": 2
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 12.29,
+          "packageLabel": "1.8 kg container",
+          "servingsPerPackage": 12
+        },
+        "walmart": {
+          "price": 5.29,
+          "packageLabel": "4-cup container",
+          "servingsPerPackage": 4
+        },
+        "noFrills": {
+          "price": 3.49,
+          "packageLabel": "340 g cup",
+          "servingsPerPackage": 2
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 2.89,
+          "packageLabel": "4-cup container",
+          "servingsPerPackage": 4
+        },
+        "asda": {
+          "price": 2.69,
+          "packageLabel": "4-cup container",
+          "servingsPerPackage": 4
+        },
+        "aldi": {
+          "price": 1.69,
+          "packageLabel": "340 g cup",
+          "servingsPerPackage": 2
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 5.69,
+          "packageLabel": "4-cup container",
+          "servingsPerPackage": 4
+        },
+        "coles": {
+          "price": 5.49,
+          "packageLabel": "4-cup container",
+          "servingsPerPackage": 4
+        },
+        "aldi": {
+          "price": 3.29,
+          "packageLabel": "340 g cup",
+          "servingsPerPackage": 2
+        }
+      }
+    }
+  },
+  {
+    "id": "extra-virgin-olive-oil",
+    "name": "Extra Virgin Olive Oil",
+    "category": "healthy-fats-oils",
+    "referenceServing": "1 tbsp (14g)",
+    "dietTags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "gluten-free",
+      "keto",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 0,
+      "magnesiumMg": 0,
+      "vitaminDIU": 0,
+      "proteinG": 0,
+      "healthyFatG": 14
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 21,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 19.99,
+          "packageLabel": "2 L (Kirkland Organic)",
+          "servingsPerPackage": 145
+        },
+        "walmart": {
+          "price": 7.98,
+          "packageLabel": "16.9 oz (500 ml)",
+          "servingsPerPackage": 33
+        },
+        "traderJoes": {
+          "price": 7.99,
+          "packageLabel": "16.9 oz (500 ml), California Estate",
+          "servingsPerPackage": 33
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 22.29,
+          "packageLabel": "2 L (Kirkland Organic)",
+          "servingsPerPackage": 145
+        },
+        "walmart": {
+          "price": 9.49,
+          "packageLabel": "500 ml",
+          "servingsPerPackage": 33
+        },
+        "noFrills": {
+          "price": 8.29,
+          "packageLabel": "500 ml",
+          "servingsPerPackage": 33
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 6.79,
+          "packageLabel": "500 ml",
+          "servingsPerPackage": 33
+        },
+        "asda": {
+          "price": 6.29,
+          "packageLabel": "500 ml",
+          "servingsPerPackage": 33
+        },
+        "aldi": {
+          "price": 5.49,
+          "packageLabel": "500 ml",
+          "servingsPerPackage": 33
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 10.79,
+          "packageLabel": "500 ml",
+          "servingsPerPackage": 33
+        },
+        "coles": {
+          "price": 10.29,
+          "packageLabel": "500 ml",
+          "servingsPerPackage": 33
+        },
+        "aldi": {
+          "price": 8.29,
+          "packageLabel": "500 ml",
+          "servingsPerPackage": 33
+        }
+      }
+    }
+  },
+  {
+    "id": "grass-fed-butter",
+    "name": "Grass-Fed Butter",
+    "category": "healthy-fats-oils",
+    "referenceServing": "1 tbsp (14g)",
+    "dietTags": [
+      "vegetarian",
+      "gluten-free",
+      "keto"
+    ],
+    "nutrients": {
+      "zincMg": 0,
+      "magnesiumMg": 0,
+      "vitaminDIU": 0,
+      "proteinG": 0.1,
+      "healthyFatG": 12
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 14,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 8.99,
+          "packageLabel": "2 lb (32 oz)",
+          "servingsPerPackage": 65
+        },
+        "walmart": {
+          "price": 4.24,
+          "packageLabel": "1 lb (16 oz)",
+          "servingsPerPackage": 32
+        },
+        "traderJoes": {
+          "price": 4.49,
+          "packageLabel": "8 oz",
+          "servingsPerPackage": 16
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 9.99,
+          "packageLabel": "900 g",
+          "servingsPerPackage": 65
+        },
+        "walmart": {
+          "price": 4.99,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 32
+        },
+        "noFrills": {
+          "price": 4.69,
+          "packageLabel": "225 g",
+          "servingsPerPackage": 16
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 3.69,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 32
+        },
+        "asda": {
+          "price": 3.29,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 32
+        },
+        "aldi": {
+          "price": 2.99,
+          "packageLabel": "225 g",
+          "servingsPerPackage": 16
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 5.69,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 32
+        },
+        "coles": {
+          "price": 5.49,
+          "packageLabel": "450 g",
+          "servingsPerPackage": 32
+        },
+        "aldi": {
+          "price": 4.69,
+          "packageLabel": "225 g",
+          "servingsPerPackage": 16
+        }
+      }
+    }
+  },
+  {
+    "id": "ghee-clarified-butter",
+    "name": "Ghee (Clarified Butter)",
+    "category": "healthy-fats-oils",
+    "referenceServing": "1 tbsp (13g)",
+    "dietTags": [
+      "vegetarian",
+      "gluten-free",
+      "keto"
+    ],
+    "nutrients": {
+      "zincMg": 0,
+      "magnesiumMg": 0,
+      "vitaminDIU": 0,
+      "proteinG": 0,
+      "healthyFatG": 13
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 14,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 9.99,
+          "packageLabel": "13 oz jar",
+          "servingsPerPackage": 28
+        },
+        "walmart": {
+          "price": 7.98,
+          "packageLabel": "9 oz jar",
+          "servingsPerPackage": 19
+        },
+        "traderJoes": null
+      },
+      "ca": {
+        "costco": {
+          "price": 11.29,
+          "packageLabel": "370 g jar",
+          "servingsPerPackage": 28
+        },
+        "walmart": {
+          "price": 9.49,
+          "packageLabel": "255 g jar",
+          "servingsPerPackage": 19
+        },
+        "noFrills": {
+          "price": 8.29,
+          "packageLabel": "255 g jar",
+          "servingsPerPackage": 19
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 6.79,
+          "packageLabel": "255 g jar",
+          "servingsPerPackage": 19
+        },
+        "asda": {
+          "price": 6.29,
+          "packageLabel": "255 g jar",
+          "servingsPerPackage": 19
+        },
+        "aldi": {
+          "price": 5.49,
+          "packageLabel": "255 g jar",
+          "servingsPerPackage": 19
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 10.79,
+          "packageLabel": "255 g jar",
+          "servingsPerPackage": 19
+        },
+        "coles": {
+          "price": 10.29,
+          "packageLabel": "255 g jar",
+          "servingsPerPackage": 19
+        },
+        "aldi": {
+          "price": 8.29,
+          "packageLabel": "255 g jar",
+          "servingsPerPackage": 19
+        }
+      }
+    }
+  },
+  {
+    "id": "organic-coconut-oil",
+    "name": "Organic Coconut Oil",
+    "category": "healthy-fats-oils",
+    "referenceServing": "1 tbsp (14g)",
+    "dietTags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "gluten-free",
+      "keto"
+    ],
+    "nutrients": {
+      "zincMg": 0,
+      "magnesiumMg": 0,
+      "vitaminDIU": 0,
+      "proteinG": 0,
+      "healthyFatG": 14
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 14,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 16.99,
+          "packageLabel": "84 oz jar",
+          "servingsPerPackage": 170
+        },
+        "walmart": {
+          "price": 6.98,
+          "packageLabel": "29 oz jar",
+          "servingsPerPackage": 59
+        },
+        "traderJoes": {
+          "price": 5.99,
+          "packageLabel": "16 oz jar",
+          "servingsPerPackage": 32
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 18.99,
+          "packageLabel": "2.4 kg jar",
+          "servingsPerPackage": 170
+        },
+        "walmart": {
+          "price": 8.29,
+          "packageLabel": "820 g jar",
+          "servingsPerPackage": 59
+        },
+        "noFrills": {
+          "price": 6.29,
+          "packageLabel": "450 g jar",
+          "servingsPerPackage": 32
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 5.89,
+          "packageLabel": "820 g jar",
+          "servingsPerPackage": 59
+        },
+        "asda": {
+          "price": 5.49,
+          "packageLabel": "820 g jar",
+          "servingsPerPackage": 59
+        },
+        "aldi": {
+          "price": 3.99,
+          "packageLabel": "450 g jar",
+          "servingsPerPackage": 32
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 9.49,
+          "packageLabel": "820 g jar",
+          "servingsPerPackage": 59
+        },
+        "coles": {
+          "price": 8.99,
+          "packageLabel": "820 g jar",
+          "servingsPerPackage": 59
+        },
+        "aldi": {
+          "price": 6.29,
+          "packageLabel": "450 g jar",
+          "servingsPerPackage": 32
+        }
+      }
+    }
+  },
+  {
+    "id": "almond-butter",
+    "name": "Almond Butter",
+    "category": "healthy-fats-oils",
+    "referenceServing": "1 tbsp (16g)",
+    "dietTags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "gluten-free",
+      "keto",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 0.5,
+      "magnesiumMg": 25,
+      "vitaminDIU": 0,
+      "proteinG": 3,
+      "healthyFatG": 9
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 14,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 9.99,
+          "packageLabel": "27 oz jar",
+          "servingsPerPackage": 48
+        },
+        "walmart": {
+          "price": 5.98,
+          "packageLabel": "16 oz jar",
+          "servingsPerPackage": 28
+        },
+        "traderJoes": {
+          "price": 7.99,
+          "packageLabel": "16 oz jar, creamy",
+          "servingsPerPackage": 28
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 11.29,
+          "packageLabel": "770 g jar",
+          "servingsPerPackage": 48
+        },
+        "walmart": {
+          "price": 6.99,
+          "packageLabel": "450 g jar",
+          "servingsPerPackage": 28
+        },
+        "noFrills": {
+          "price": 8.29,
+          "packageLabel": "450 g jar, creamy",
+          "servingsPerPackage": 28
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 4.99,
+          "packageLabel": "450 g jar",
+          "servingsPerPackage": 28
+        },
+        "asda": {
+          "price": 4.69,
+          "packageLabel": "450 g jar",
+          "servingsPerPackage": 28
+        },
+        "aldi": {
+          "price": 5.49,
+          "packageLabel": "450 g jar, creamy",
+          "servingsPerPackage": 28
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 7.99,
+          "packageLabel": "450 g jar",
+          "servingsPerPackage": 28
+        },
+        "coles": {
+          "price": 7.79,
+          "packageLabel": "450 g jar",
+          "servingsPerPackage": 28
+        },
+        "aldi": {
+          "price": 8.29,
+          "packageLabel": "450 g jar, creamy",
+          "servingsPerPackage": 28
+        }
+      }
+    }
+  },
+  {
+    "id": "avocado-oil",
+    "name": "Avocado Oil",
+    "category": "healthy-fats-oils",
+    "referenceServing": "1 tbsp (14g)",
+    "dietTags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "gluten-free",
+      "keto",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 0,
+      "magnesiumMg": 0,
+      "vitaminDIU": 0,
+      "proteinG": 0,
+      "healthyFatG": 14
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 21,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 15.99,
+          "packageLabel": "2 L jar",
+          "servingsPerPackage": 145
+        },
+        "walmart": {
+          "price": 8.97,
+          "packageLabel": "16.9 oz (500 ml)",
+          "servingsPerPackage": 33
+        },
+        "traderJoes": {
+          "price": 6.99,
+          "packageLabel": "16.9 oz (500 ml)",
+          "servingsPerPackage": 33
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 17.89,
+          "packageLabel": "2 L jar",
+          "servingsPerPackage": 145
+        },
+        "walmart": {
+          "price": 10.49,
+          "packageLabel": "500 ml",
+          "servingsPerPackage": 33
+        },
+        "noFrills": {
+          "price": 7.29,
+          "packageLabel": "500 ml",
+          "servingsPerPackage": 33
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 7.69,
+          "packageLabel": "500 ml",
+          "servingsPerPackage": 33
+        },
+        "asda": {
+          "price": 6.99,
+          "packageLabel": "500 ml",
+          "servingsPerPackage": 33
+        },
+        "aldi": {
+          "price": 4.79,
+          "packageLabel": "500 ml",
+          "servingsPerPackage": 33
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 11.99,
+          "packageLabel": "500 ml",
+          "servingsPerPackage": 33
+        },
+        "coles": {
+          "price": 11.69,
+          "packageLabel": "500 ml",
+          "servingsPerPackage": 33
+        },
+        "aldi": {
+          "price": 7.29,
+          "packageLabel": "500 ml",
+          "servingsPerPackage": 33
+        }
+      }
+    }
+  },
+  {
+    "id": "steel-cut-oats",
+    "name": "Steel-Cut Oats",
+    "category": "whole-grains",
+    "referenceServing": "1/2 cup dry (40g)",
+    "dietTags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 0.9,
+      "magnesiumMg": 69,
+      "vitaminDIU": 0,
+      "proteinG": 5,
+      "healthyFatG": 1.4
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 7,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 9.99,
+          "packageLabel": "8 lb bag",
+          "servingsPerPackage": 90
+        },
+        "walmart": {
+          "price": 3.24,
+          "packageLabel": "42 oz bag",
+          "servingsPerPackage": 29
+        },
+        "traderJoes": {
+          "price": 2.99,
+          "packageLabel": "24 oz bag",
+          "servingsPerPackage": 17
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 11.29,
+          "packageLabel": "3.6 kg bag",
+          "servingsPerPackage": 90
+        },
+        "walmart": {
+          "price": 3.79,
+          "packageLabel": "1.2 kg bag",
+          "servingsPerPackage": 29
+        },
+        "noFrills": {
+          "price": 2.99,
+          "packageLabel": "680 g bag",
+          "servingsPerPackage": 17
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 2.49,
+          "packageLabel": "1.2 kg bag",
+          "servingsPerPackage": 29
+        },
+        "asda": {
+          "price": 2.29,
+          "packageLabel": "1.2 kg bag",
+          "servingsPerPackage": 29
+        },
+        "aldi": {
+          "price": 1.79,
+          "packageLabel": "680 g bag",
+          "servingsPerPackage": 17
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 4.29,
+          "packageLabel": "1.2 kg bag",
+          "servingsPerPackage": 29
+        },
+        "coles": {
+          "price": 4.29,
+          "packageLabel": "1.2 kg bag",
+          "servingsPerPackage": 29
+        },
+        "aldi": {
+          "price": 2.99,
+          "packageLabel": "680 g bag",
+          "servingsPerPackage": 17
+        }
+      }
+    }
+  },
+  {
+    "id": "quinoa",
+    "name": "Quinoa",
+    "category": "whole-grains",
+    "referenceServing": "1/4 cup dry (45g)",
+    "dietTags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "gluten-free",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 1.1,
+      "magnesiumMg": 64,
+      "vitaminDIU": 0,
+      "proteinG": 6,
+      "healthyFatG": 2.4
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 7,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 12.99,
+          "packageLabel": "4.5 lb bag, organic",
+          "servingsPerPackage": 45
+        },
+        "walmart": {
+          "price": 4.98,
+          "packageLabel": "16 oz bag",
+          "servingsPerPackage": 10
+        },
+        "traderJoes": {
+          "price": 3.99,
+          "packageLabel": "16 oz bag",
+          "servingsPerPackage": 10
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 14.49,
+          "packageLabel": "2 kg bag, organic",
+          "servingsPerPackage": 45
+        },
+        "walmart": {
+          "price": 5.89,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 10
+        },
+        "noFrills": {
+          "price": 4.29,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 10
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 3.79,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 10
+        },
+        "asda": {
+          "price": 3.49,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 10
+        },
+        "aldi": {
+          "price": 2.49,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 10
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 6.69,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 10
+        },
+        "coles": {
+          "price": 6.49,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 10
+        },
+        "aldi": {
+          "price": 4.29,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 10
+        }
+      }
+    }
+  },
+  {
+    "id": "brown-rice",
+    "name": "Brown Rice",
+    "category": "whole-grains",
+    "referenceServing": "1/4 cup dry (45g)",
+    "dietTags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "gluten-free",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 0.6,
+      "magnesiumMg": 39,
+      "vitaminDIU": 0,
+      "proteinG": 3,
+      "healthyFatG": 0.9
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 7,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 16.99,
+          "packageLabel": "25 lb bag",
+          "servingsPerPackage": 252
+        },
+        "walmart": {
+          "price": 2.24,
+          "packageLabel": "32 oz bag",
+          "servingsPerPackage": 20
+        },
+        "traderJoes": {
+          "price": 2.29,
+          "packageLabel": "16 oz bag",
+          "servingsPerPackage": 10
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 18.99,
+          "packageLabel": "11.3 kg bag",
+          "servingsPerPackage": 252
+        },
+        "walmart": {
+          "price": 2.69,
+          "packageLabel": "900 g bag",
+          "servingsPerPackage": 20
+        },
+        "noFrills": {
+          "price": 2.49,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 10
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 1.69,
+          "packageLabel": "900 g bag",
+          "servingsPerPackage": 20
+        },
+        "asda": {
+          "price": 1.49,
+          "packageLabel": "900 g bag",
+          "servingsPerPackage": 20
+        },
+        "aldi": {
+          "price": 1.49,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 10
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 2.99,
+          "packageLabel": "900 g bag",
+          "servingsPerPackage": 20
+        },
+        "coles": {
+          "price": 2.89,
+          "packageLabel": "900 g bag",
+          "servingsPerPackage": 20
+        },
+        "aldi": {
+          "price": 2.49,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 10
+        }
+      }
+    }
+  },
+  {
+    "id": "whole-wheat-bread",
+    "name": "Whole Wheat Bread",
+    "category": "whole-grains",
+    "referenceServing": "1 slice (43g)",
+    "dietTags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 0.6,
+      "magnesiumMg": 23,
+      "vitaminDIU": 0,
+      "proteinG": 4,
+      "healthyFatG": 1
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 14,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 6.49,
+          "packageLabel": "2-loaf pack (48 slices)",
+          "servingsPerPackage": 48
+        },
+        "walmart": {
+          "price": 2.5,
+          "packageLabel": "1 loaf (20 slices)",
+          "servingsPerPackage": 20
+        },
+        "traderJoes": {
+          "price": 3.49,
+          "packageLabel": "1 loaf, sourdough (17 slices)",
+          "servingsPerPackage": 17
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 7.29,
+          "packageLabel": "2-loaf pack (48 slices)",
+          "servingsPerPackage": 48
+        },
+        "walmart": {
+          "price": 2.99,
+          "packageLabel": "1 loaf (20 slices)",
+          "servingsPerPackage": 20
+        },
+        "noFrills": {
+          "price": 3.69,
+          "packageLabel": "1 loaf, sourdough (17 slices)",
+          "servingsPerPackage": 17
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 1.89,
+          "packageLabel": "1 loaf (20 slices)",
+          "servingsPerPackage": 20
+        },
+        "asda": {
+          "price": 1.79,
+          "packageLabel": "1 loaf (20 slices)",
+          "servingsPerPackage": 20
+        },
+        "aldi": {
+          "price": 1.99,
+          "packageLabel": "1 loaf, sourdough (17 slices)",
+          "servingsPerPackage": 17
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 3.29,
+          "packageLabel": "1 loaf (20 slices)",
+          "servingsPerPackage": 20
+        },
+        "coles": {
+          "price": 3.29,
+          "packageLabel": "1 loaf (20 slices)",
+          "servingsPerPackage": 20
+        },
+        "aldi": {
+          "price": 3.69,
+          "packageLabel": "1 loaf, sourdough (17 slices)",
+          "servingsPerPackage": 17
+        }
+      }
+    }
+  },
+  {
+    "id": "pearled-barley",
+    "name": "Pearled Barley",
+    "category": "whole-grains",
+    "referenceServing": "1/4 cup dry (45g)",
+    "dietTags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 0.6,
+      "magnesiumMg": 22,
+      "vitaminDIU": 0,
+      "proteinG": 3,
+      "healthyFatG": 0.4
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 7,
+    "stores": {
+      "us": {
+        "costco": null,
+        "walmart": {
+          "price": 2.12,
+          "packageLabel": "16 oz bag",
+          "servingsPerPackage": 10
+        },
+        "traderJoes": null
+      },
+      "ca": {
+        "costco": null,
+        "walmart": {
+          "price": 2.49,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 10
+        },
+        "noFrills": {
+          "price": 2.29,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 10
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 1.69,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 10
+        },
+        "asda": {
+          "price": 1.49,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 10
+        },
+        "aldi": {
+          "price": 1.29,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 10
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 2.89,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 10
+        },
+        "coles": {
+          "price": 2.79,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 10
+        },
+        "aldi": {
+          "price": 2.29,
+          "packageLabel": "450 g bag",
+          "servingsPerPackage": 10
+        }
+      }
+    }
+  },
+  {
+    "id": "whole-wheat-pasta",
+    "name": "Whole Wheat Pasta",
+    "category": "whole-grains",
+    "referenceServing": "2 oz dry (57g)",
+    "dietTags": [
+      "vegetarian",
+      "vegan",
+      "dairy-free",
+      "mediterranean"
+    ],
+    "nutrients": {
+      "zincMg": 1.1,
+      "magnesiumMg": 42,
+      "vitaminDIU": 0,
+      "proteinG": 7,
+      "healthyFatG": 1.3
+    },
+    "minWeeklyServings": 1,
+    "maxWeeklyServings": 7,
+    "stores": {
+      "us": {
+        "costco": {
+          "price": 7.99,
+          "packageLabel": "4.4 lb (70 oz) bag",
+          "servingsPerPackage": 35
+        },
+        "walmart": {
+          "price": 1.24,
+          "packageLabel": "16 oz box",
+          "servingsPerPackage": 8
+        },
+        "traderJoes": {
+          "price": 2.29,
+          "packageLabel": "16 oz box, organic",
+          "servingsPerPackage": 8
+        }
+      },
+      "ca": {
+        "costco": {
+          "price": 8.99,
+          "packageLabel": "2 kg bag",
+          "servingsPerPackage": 35
+        },
+        "walmart": {
+          "price": 1.49,
+          "packageLabel": "450 g box",
+          "servingsPerPackage": 8
+        },
+        "noFrills": {
+          "price": 2.49,
+          "packageLabel": "450 g box, organic",
+          "servingsPerPackage": 8
+        }
+      },
+      "uk": {
+        "tesco": {
+          "price": 0.99,
+          "packageLabel": "450 g box",
+          "servingsPerPackage": 8
+        },
+        "asda": {
+          "price": 0.89,
+          "packageLabel": "450 g box",
+          "servingsPerPackage": 8
+        },
+        "aldi": {
+          "price": 1.49,
+          "packageLabel": "450 g box, organic",
+          "servingsPerPackage": 8
+        }
+      },
+      "au": {
+        "woolworths": {
+          "price": 1.69,
+          "packageLabel": "450 g box",
+          "servingsPerPackage": 8
+        },
+        "coles": {
+          "price": 1.69,
+          "packageLabel": "450 g box",
+          "servingsPerPackage": 8
+        },
+        "aldi": {
+          "price": 2.49,
+          "packageLabel": "450 g box, organic",
+          "servingsPerPackage": 8
+        }
+      }
+    }
+  }
+]

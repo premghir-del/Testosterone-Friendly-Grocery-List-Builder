@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Testosterone-Friendly Grocery List Builder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Archivo+Expanded:wght@600;700&family=Source+Sans+3:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FAF8F4;
+    --bg-raised: #FFFFFF;
+    --ink: #1C1B19;
+    --ink-soft: #4A4640;
+    --gray: #8A8378;
+    --line: #E3DED4;
+    --clay: #C1503D;
+    --clay-deep: #9C3D2E;
+    --sage: #5B7A5E;
+    --sage-bg: #EAF0E9;
+    --amber: #B8893E;
+    --amber-bg: #F5EDE0;
+    --font-display: 'Archivo Expanded', sans-serif;
+    --font-head: 'Archivo', sans-serif;
+    --font-body: 'Source Sans 3', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; }
+
+  /* ============ HEADER ============ */
+  .masthead {
+    border-bottom: 2px solid var(--ink);
+    padding: 20px 16px 16px;
+    background: var(--bg);
+  }
+  .masthead-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .brand-mark {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--clay);
+    margin-bottom: 8px;
+  }
+  .headline {
+    font-family: var(--font-head);
+    font-weight: 800;
+    font-size: clamp(28px, 4vw, 42px);
+    letter-spacing: -0.01em;
+    line-height: 1.05;
+  }
+  .headline em {
+    font-style: normal;
+    color: var(--clay);
+  }
+  .subhead {
+    font-size: 14px;
+    color: var(--ink-soft);
+    max-width: 360px;
+    text-align: right;
+    line-height: 1.5;
+    padding-bottom: 4px;
+  }
+  .subhead strong { color: var(--ink); }
+
+  /* ============ CONTROLS PANEL ============ */
+  .controls-wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 22px 16px 0;
+  }
+  .controls-panel {
+    background: var(--bg-raised);
+    border: 1.5px solid var(--line);
+    border-radius: 14px;
+    padding: 20px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: flex-start;
+  }
+  .control-group { display: flex; flex-direction: column; gap: 8px; }
+  .control-label {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--gray);
+  }
+  .budget-input-wrap {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .budget-input-wrap .dollar {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--ink-soft);
+  }
+  #budgetInput {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 20px;
+    width: 110px;
+    padding: 7px 10px;
+    border: 1.5px solid var(--line);
+    border-radius: 8px;
+    background: var(--bg-raised);
+    color: var(--ink);
+  }
+  #budgetInput:focus {
+    outline: 2px solid var(--clay);
+    outline-offset: 1px;
+    border-color: var(--clay);
+  }
+
+  .pill-row { display: flex; flex-wrap: wrap; gap: 6px; max-width: 420px; }
+  .pill {
+    font-family: var(--font-head);
+    font-weight: 600;
+    font-size: 12.5px;
+    padding: 7px 14px;
+    border-radius: 999px;
+    border: 1.5px solid var(--line);
+    background: var(--bg-raised);
+    color: var(--ink-soft);
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .pill.active {
+    background: var(--ink);
+    color: var(--bg);
+    border-color: var(--ink);
+  }
+  .pill:not(.active):hover { border-color: var(--clay); color: var(--ink); }
+
+  .store-checks { display: flex; flex-direction: column; gap: 6px; }
+  .store-check {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .store-check input { accent-color: var(--clay); width: 15px; height: 15px; cursor: pointer; }
+
+  /* ============ SUMMARY BAR ============ */
+  .summary-bar {
+    max-width: 1180px;
+    margin: 18px auto 0;
+    padding: 0 16px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: var(--bg);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--line);
+  }
+  .summary-bar.scrolled { box-shadow: 0 4px 16px -8px rgba(0,0,0,0.15); }
+  .summary-stat {
+    background: var(--bg-raised);
+    border: 1.5px solid var(--line);
+    border-radius: 10px;
+    padding: 10px 16px;
+    min-width: 130px;
+  }
+  .summary-stat .label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--gray);
+    margin-bottom: 3px;
+  }
+  .summary-stat .figure {
+    font-family: var(--font-head);
+    font-weight: 800;
+    font-size: 20px;
+  }
+  .summary-stat.over .figure { color: var(--clay); }
+  .summary-stat.remaining .figure { color: var(--sage); }
+  .summary-spacer { flex: 1; }
+
+  /* ============ CATEGORY SECTIONS ============ */
+  .list-wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 24px 16px 20px;
+  }
+  .category-section { margin-bottom: 28px; }
+  .category-heading {
+    font-family: var(--font-mono);
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--gray);
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--ink);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .category-heading .cat-total { color: var(--ink-soft); }
+
+  .item-row {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 0.8fr 0.7fr 0.9fr;
+    gap: 12px;
+    align-items: center;
+    padding: 11px 4px;
+    border-bottom: 1px solid var(--line);
+  }
+  .item-row:hover { background: rgba(193, 80, 61, 0.04); }
+  .item-name-cell .item-name {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 13.5px;
+  }
+  .item-name-cell .item-serving {
+    display: block;
+    font-size: 10.5px;
+    color: var(--gray);
+    margin-top: 2px;
+  }
+  .item-store-cell { display: flex; flex-direction: column; gap: 3px; }
+  .item-store-cell .price-line {
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+  }
+  .item-store-cell .pkg-label {
+    font-size: 10px;
+    color: var(--gray);
+  }
+  .item-qty-cell, .item-cost-cell {
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    text-align: right;
+  }
+  .item-cost-cell { font-weight: 600; }
+
+  .badge {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 9.5px;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+  .badge-costco { background: #E3EBF7; color: #1F4E96; }
+  .badge-walmart { background: #E4EDE5; color: #2E6B4F; }
+  .badge-traderJoes { background: #FBE7DD; color: var(--clay-deep); }
+  .badge-noFrills { background: #FCE9D9; color: #A65A1E; }
+  .badge-tesco { background: #E8E3F5; color: #5B3FA0; }
+  .badge-asda { background: #DCEFF7; color: #1C6E8C; }
+  .badge-aldi { background: #FDE7EA; color: #B23A5C; }
+  .badge-woolworths { background: #E1F0E3; color: #1E6B36; }
+  .badge-coles { background: #FDEBE3; color: #C1503D; }
+
+  .value-score {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-family: var(--font-mono);
+    font-weight: 600;
+    font-size: 13px;
+  }
+  .value-bar {
+    width: 40px;
+    height: 6px;
+    border-radius: 3px;
+    background: var(--line);
+    overflow: hidden;
+    position: relative;
+  }
+  .value-bar-fill {
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    border-radius: 3px;
+  }
+  .vs-high { color: var(--sage); }
+  .vs-high .value-bar-fill { background: var(--sage); }
+  .vs-mid { color: var(--amber); }
+  .vs-mid .value-bar-fill { background: var(--amber); }
+  .vs-low { color: var(--clay); }
+  .vs-low .value-bar-fill { background: var(--clay); }
+
+  .empty-state {
+    text-align: center;
+    padding: 70px 20px;
+    color: var(--gray);
+  }
+  .empty-state .big {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+
+  /* ============ NUTRIENT SUMMARY ============ */
+  .nutrient-panel {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 16px 20px;
+  }
+  .nutrient-panel-inner {
+    background: var(--bg-raised);
+    border: 1.5px solid var(--line);
+    border-radius: 14px;
+    padding: 20px 24px;
+  }
+  .nutrient-panel-title {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 14px;
+  }
+  .nutrient-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+  .nutrient-item .n-label {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--gray);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  .nutrient-item .n-label strong { color: var(--ink); }
+  .n-track {
+    height: 8px;
+    border-radius: 4px;
+    background: var(--line);
+    overflow: hidden;
+  }
+  .n-fill { height: 100%; border-radius: 4px; }
+
+  /* ============ FOOTNOTE ============ */
+  .footnote {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 32px 50px;
+    font-size: 12.5px;
+    color: var(--gray);
+    line-height: 1.6;
+    border-top: 1px solid var(--line);
+    padding-top: 22px;
+  }
+  .footnote strong { color: var(--ink-soft); }
+
+  @media (max-width: 720px) {
+    .masthead-inner { flex-direction: column; align-items: flex-start; }
+    .subhead { text-align: left; }
+    .item-row { grid-template-columns: 1fr; gap: 4px; }
+    .item-qty-cell, .item-cost-cell { text-align: left; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Loading bar -->
+<div id="loadingBar" style="display:none; position:fixed; top:0; left:0; right:0; height:3px; background:linear-gradient(90deg,var(--clay),var(--amber)); z-index:100; animation:pulse 1.2s ease-in-out infinite;"></div>
+<style>@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }</style>
+
+<!-- Error message -->
+<div id="errorMsg" style="display:none; position:fixed; bottom:24px; left:50%; transform:translateX(-50%); background:#2a1a17; color:#f5c5bc; padding:12px 22px; border-radius:10px; font-size:13.5px; z-index:100; max-width:500px; text-align:center;"></div>
+
+<div id="root"></div>
+
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel" data-type="module">
+const { useState, useEffect, useMemo } = React;
+
+// ── Constants ──────────────────────────────────────────────────────────────
+const DATA_URL = "grocery_staples_data.json";
+
+const CATEGORY_LABELS = {
+  "protein-meat": "Protein & Meat",
+  "seafood": "Seafood",
+  "eggs-dairy": "Eggs & Dairy",
+  "nuts-seeds": "Nuts & Seeds",
+  "vegetables": "Vegetables",
+  "fruits": "Fruits",
+  "healthy-fats-oils": "Healthy Fats & Oils",
+  "whole-grains": "Whole Grains",
+};
+const CATEGORY_ORDER = Object.keys(CATEGORY_LABELS);
+
+const DIET_TAGS = [
+  { key: "vegetarian", label: "Vegetarian" },
+  { key: "vegan", label: "Vegan" },
+  { key: "dairy-free", label: "Dairy-free" },
+  { key: "gluten-free", label: "Gluten-free" },
+  { key: "keto", label: "Keto / Low-carb" },
+  { key: "mediterranean", label: "Mediterranean" },
+];
+
+const REGIONS = {
+  us: { label: "United States", symbol: "$", stores: [
+    { key: "costco", label: "Costco" },
+    { key: "walmart", label: "Walmart" },
+    { key: "traderJoes", label: "Trader Joe's" },
+  ]},
+  ca: { label: "Canada", symbol: "$", stores: [
+    { key: "costco", label: "Costco" },
+    { key: "walmart", label: "Walmart" },
+    { key: "noFrills", label: "No Frills" },
+  ]},
+  uk: { label: "United Kingdom", symbol: "£", stores: [
+    { key: "tesco", label: "Tesco" },
+    { key: "asda", label: "Asda" },
+    { key: "aldi", label: "Aldi" },
+  ]},
+  au: { label: "Australia", symbol: "$", stores: [
+    { key: "woolworths", label: "Woolworths" },
+    { key: "coles", label: "Coles" },
+    { key: "aldi", label: "Aldi" },
+  ]},
+};
+const REGION_ORDER = ["us", "ca", "uk", "au"];
+
+// Weekly nutrient targets (7x adult-male RDA / practical daily anchor)
+const WEEKLY_TARGETS = {
+  zincMg: 11 * 7,
+  magnesiumMg: 420 * 7,
+  vitaminDIU: 800 * 7,
+  proteinG: 56 * 7,
+  healthyFatG: 50 * 7,
+};
+
+const NUTRIENT_LABELS = {
+  zincMg: "Zinc",
+  magnesiumMg: "Magnesium",
+  vitaminDIU: "Vitamin D",
+  proteinG: "Protein",
+  healthyFatG: "Healthy Fat",
+};
+const NUTRIENT_UNITS = {
+  zincMg: "mg",
+  magnesiumMg: "mg",
+  vitaminDIU: "IU",
+  proteinG: "g",
+  healthyFatG: "g",
+};
+
+// ── Fallback data (used only if grocery_staples_data.json can't be fetched) ──
+const FALLBACK_STAPLES = [
+  {
+    id: "ground-beef-8515", name: "Ground Beef, 85/15", category: "protein-meat",
+    referenceServing: "4 oz (113g) raw", dietTags: ["dairy-free", "gluten-free", "keto"],
+    nutrients: { zincMg: 5.4, magnesiumMg: 20, vitaminDIU: 0, proteinG: 19, healthyFatG: 17 },
+    minWeeklyServings: 1, maxWeeklyServings: 7,
+    stores: {
+      us: {
+        costco: { price: 14.97, packageLabel: "3 lb (48 oz)", servingsPerPackage: 12 },
+        walmart: { price: 5.24, packageLabel: "1 lb (16 oz)", servingsPerPackage: 4 },
+        traderJoes: { price: 7.99, packageLabel: "1 lb grass-fed (16 oz)", servingsPerPackage: 4 },
+      },
+      ca: {
+        costco: { price: 17.69, packageLabel: "1.4 kg", servingsPerPackage: 12 },
+        walmart: { price: 6.49, packageLabel: "450 g", servingsPerPackage: 4 },
+        noFrills: { price: 8.79, packageLabel: "450 g grass-fed", servingsPerPackage: 4 },
+      },
+      uk: {
+        tesco: { price: 4.29, packageLabel: "450 g", servingsPerPackage: 4 },
+        asda: { price: 3.89, packageLabel: "450 g", servingsPerPackage: 4 },
+        aldi: { price: 5.29, packageLabel: "450 g grass-fed", servingsPerPackage: 4 },
+      },
+      au: {
+        woolworths: { price: 7.99, packageLabel: "450 g", servingsPerPackage: 4 },
+        coles: { price: 7.79, packageLabel: "450 g", servingsPerPackage: 4 },
+        aldi: { price: 9.69, packageLabel: "450 g grass-fed", servingsPerPackage: 4 },
+      },
+    },
+  },
+  {
+    id: "canned-sockeye-salmon", name: "Canned Wild Sockeye Salmon", category: "seafood",
+    referenceServing: "1 can (5 oz / 141g) drained", dietTags: ["dairy-free", "gluten-free", "keto", "mediterranean"],
+    nutrients: { zincMg: 0.9, magnesiumMg: 34, vitaminDIU: 570, proteinG: 25, healthyFatG: 7 },
+    minWeeklyServings: 1, maxWeeklyServings: 4,
+    stores: {
+      us: {
+        costco: { price: 16.99, packageLabel: "6-pack (6 x 5 oz cans)", servingsPerPackage: 6 },
+        walmart: { price: 3.98, packageLabel: "1 can (5 oz)", servingsPerPackage: 1 },
+        traderJoes: { price: 3.49, packageLabel: "1 can (5 oz)", servingsPerPackage: 1 },
+      },
+      ca: {
+        costco: { price: 19.99, packageLabel: "6-pack (6 x 140 g cans)", servingsPerPackage: 6 },
+        walmart: { price: 4.89, packageLabel: "1 can (140 g)", servingsPerPackage: 1 },
+        noFrills: { price: 3.89, packageLabel: "1 can (140 g)", servingsPerPackage: 1 },
+      },
+      uk: {
+        tesco: { price: 3.29, packageLabel: "1 can (140 g)", servingsPerPackage: 1 },
+        asda: { price: 2.99, packageLabel: "1 can (140 g)", servingsPerPackage: 1 },
+        aldi: { price: 2.29, packageLabel: "1 can (140 g)", servingsPerPackage: 1 },
+      },
+      au: {
+        woolworths: { price: 6.29, packageLabel: "1 can (140 g)", servingsPerPackage: 1 },
+        coles: { price: 5.99, packageLabel: "1 can (140 g)", servingsPerPackage: 1 },
+        aldi: { price: 4.29, packageLabel: "1 can (140 g)", servingsPerPackage: 1 },
+      },
+    },
+  },
+  {
+    id: "pasture-raised-eggs", name: "Pasture-Raised Eggs", category: "eggs-dairy",
+    referenceServing: "1 large egg", dietTags: ["vegetarian", "dairy-free", "gluten-free", "keto", "mediterranean"],
+    nutrients: { zincMg: 0.6, magnesiumMg: 6, vitaminDIU: 44, proteinG: 6, healthyFatG: 5 },
+    minWeeklyServings: 2, maxWeeklyServings: 14,
+    stores: {
+      us: {
+        costco: { price: 6.99, packageLabel: "24-count, cage-free", servingsPerPackage: 24 },
+        walmart: { price: 3.98, packageLabel: "18-count", servingsPerPackage: 18 },
+        traderJoes: { price: 5.99, packageLabel: "12-count, pasture-raised", servingsPerPackage: 12 },
+      },
+      ca: {
+        costco: { price: 8.29, packageLabel: "24-count, cage-free", servingsPerPackage: 24 },
+        walmart: { price: 4.89, packageLabel: "18-count", servingsPerPackage: 18 },
+        noFrills: { price: 6.69, packageLabel: "12-count, pasture-raised", servingsPerPackage: 12 },
+      },
+      uk: {
+        tesco: { price: 3.29, packageLabel: "18-count", servingsPerPackage: 18 },
+        asda: { price: 2.99, packageLabel: "18-count", servingsPerPackage: 18 },
+        aldi: { price: 3.89, packageLabel: "12-count, pasture-raised", servingsPerPackage: 12 },
+      },
+      au: {
+        woolworths: { price: 6.29, packageLabel: "18-count", servingsPerPackage: 18 },
+        coles: { price: 5.99, packageLabel: "18-count", servingsPerPackage: 18 },
+        aldi: { price: 7.29, packageLabel: "12-count, pasture-raised", servingsPerPackage: 12 },
+      },
+    },
+  },
+  {
+    id: "pumpkin-seeds-pepitas", name: "Pumpkin Seeds (Pepitas), Raw", category: "nuts-seeds",
+    referenceServing: "1 oz (28g)", dietTags: ["vegetarian", "vegan", "dairy-free", "gluten-free", "keto", "mediterranean"],
+    nutrients: { zincMg: 2.2, magnesiumMg: 156, vitaminDIU: 0, proteinG: 7, healthyFatG: 13 },
+    minWeeklyServings: 1, maxWeeklyServings: 7,
+    stores: {
+      us: {
+        costco: { price: 11.99, packageLabel: "2 lb (32 oz) bag", servingsPerPackage: 32 },
+        walmart: { price: 5.98, packageLabel: "16 oz bag", servingsPerPackage: 16 },
+        traderJoes: { price: 3.49, packageLabel: "10 oz bag", servingsPerPackage: 10 },
+      },
+      ca: {
+        costco: { price: 13.49, packageLabel: "900 g bag", servingsPerPackage: 32 },
+        walmart: { price: 6.99, packageLabel: "450 g bag", servingsPerPackage: 16 },
+        noFrills: { price: 3.69, packageLabel: "280 g bag", servingsPerPackage: 10 },
+      },
+      uk: {
+        tesco: { price: 4.99, packageLabel: "450 g bag", servingsPerPackage: 16 },
+        asda: { price: 4.69, packageLabel: "450 g bag", servingsPerPackage: 16 },
+        aldi: { price: 2.29, packageLabel: "280 g bag", servingsPerPackage: 10 },
+      },
+      au: {
+        woolworths: { price: 7.99, packageLabel: "450 g bag", servingsPerPackage: 16 },
+        coles: { price: 7.79, packageLabel: "450 g bag", servingsPerPackage: 16 },
+        aldi: { price: 3.69, packageLabel: "280 g bag", servingsPerPackage: 10 },
+      },
+    },
+  },
+  {
+    id: "broccoli-crowns", name: "Broccoli Crowns", category: "vegetables",
+    referenceServing: "1 cup chopped (91g)", dietTags: ["vegetarian", "vegan", "dairy-free", "gluten-free", "keto", "mediterranean"],
+    nutrients: { zincMg: 0.4, magnesiumMg: 19, vitaminDIU: 0, proteinG: 2.6, healthyFatG: 0.3 },
+    minWeeklyServings: 1, maxWeeklyServings: 14,
+    stores: {
+      us: {
+        costco: { price: 5.99, packageLabel: "4 lb bag", servingsPerPackage: 20 },
+        walmart: { price: 1.98, packageLabel: "1 lb (per lb)", servingsPerPackage: 5 },
+        traderJoes: { price: 2.29, packageLabel: "12 oz florets bag", servingsPerPackage: 4 },
+      },
+      ca: {
+        costco: { price: 7.29, packageLabel: "1.8 kg bag", servingsPerPackage: 20 },
+        walmart: { price: 2.49, packageLabel: "500 g (approx.)", servingsPerPackage: 5 },
+        noFrills: { price: 2.69, packageLabel: "340 g florets bag", servingsPerPackage: 4 },
+      },
+      uk: {
+        tesco: { price: 1.49, packageLabel: "500 g (approx.)", servingsPerPackage: 5 },
+        asda: { price: 1.29, packageLabel: "500 g (approx.)", servingsPerPackage: 5 },
+        aldi: { price: 1.29, packageLabel: "340 g florets bag", servingsPerPackage: 4 },
+      },
+      au: {
+        woolworths: { price: 2.79, packageLabel: "500 g (approx.)", servingsPerPackage: 5 },
+        coles: { price: 2.69, packageLabel: "500 g (approx.)", servingsPerPackage: 5 },
+        aldi: { price: 2.49, packageLabel: "340 g florets bag", servingsPerPackage: 4 },
+      },
+    },
+  },
+  {
+    id: "avocado", name: "Avocado", category: "fruits",
+    referenceServing: "1/2 medium (100g)", dietTags: ["vegetarian", "vegan", "dairy-free", "gluten-free", "keto", "mediterranean"],
+    nutrients: { zincMg: 0.6, magnesiumMg: 29, vitaminDIU: 0, proteinG: 2, healthyFatG: 15 },
+    minWeeklyServings: 1, maxWeeklyServings: 14,
+    stores: {
+      us: {
+        costco: { price: 6.99, packageLabel: "6-count bag", servingsPerPackage: 12 },
+        walmart: { price: 0.98, packageLabel: "1 each", servingsPerPackage: 2 },
+        traderJoes: { price: 1.49, packageLabel: "1 each", servingsPerPackage: 2 },
+      },
+      ca: {
+        costco: { price: 8.69, packageLabel: "6-count bag", servingsPerPackage: 12 },
+        walmart: { price: 1.29, packageLabel: "1 each", servingsPerPackage: 2 },
+        noFrills: { price: 1.69, packageLabel: "1 each", servingsPerPackage: 2 },
+      },
+      uk: {
+        tesco: { price: 0.69, packageLabel: "1 each", servingsPerPackage: 2 },
+        asda: { price: 0.69, packageLabel: "1 each", servingsPerPackage: 2 },
+        aldi: { price: 0.89, packageLabel: "1 each", servingsPerPackage: 2 },
+      },
+      au: {
+        woolworths: { price: 1.29, packageLabel: "1 each", servingsPerPackage: 2 },
+        coles: { price: 1.29, packageLabel: "1 each", servingsPerPackage: 2 },
+        aldi: { price: 1.69, packageLabel: "1 each", servingsPerPackage: 2 },
+      },
+    },
+  },
+  {
+    id: "extra-virgin-olive-oil", name: "Extra Virgin Olive Oil", category: "healthy-fats-oils",
+    referenceServing: "1 tbsp (14g)", dietTags: ["vegetarian", "vegan", "dairy-free", "gluten-free", "keto", "mediterranean"],
+    nutrients: { zincMg: 0, magnesiumMg: 0, vitaminDIU: 0, proteinG: 0, healthyFatG: 14 },
+    minWeeklyServings: 1, maxWeeklyServings: 21,
+    stores: {
+      us: {
+        costco: { price: 19.99, packageLabel: "2 L (Kirkland Organic)", servingsPerPackage: 145 },
+        walmart: { price: 7.98, packageLabel: "16.9 oz (500 ml)", servingsPerPackage: 33 },
+        traderJoes: { price: 7.99, packageLabel: "16.9 oz (500 ml), California Estate", servingsPerPackage: 33 },
+      },
+      ca: {
+        costco: { price: 22.29, packageLabel: "2 L (Kirkland Organic)", servingsPerPackage: 145 },
+        walmart: { price: 9.49, packageLabel: "500 ml", servingsPerPackage: 33 },
+        noFrills: { price: 8.29, packageLabel: "500 ml", servingsPerPackage: 33 },
+      },
+      uk: {
+        tesco: { price: 6.79, packageLabel: "500 ml", servingsPerPackage: 33 },
+        asda: { price: 6.29, packageLabel: "500 ml", servingsPerPackage: 33 },
+        aldi: { price: 5.49, packageLabel: "500 ml", servingsPerPackage: 33 },
+      },
+      au: {
+        woolworths: { price: 10.79, packageLabel: "500 ml", servingsPerPackage: 33 },
+        coles: { price: 10.29, packageLabel: "500 ml", servingsPerPackage: 33 },
+        aldi: { price: 8.29, packageLabel: "500 ml", servingsPerPackage: 33 },
+      },
+    },
+  },
+  {
+    id: "steel-cut-oats", name: "Steel-Cut Oats", category: "whole-grains",
+    referenceServing: "1/2 cup dry (40g)", dietTags: ["vegetarian", "vegan", "dairy-free", "mediterranean"],
+    nutrients: { zincMg: 0.9, magnesiumMg: 69, vitaminDIU: 0, proteinG: 5, healthyFatG: 1.4 },
+    minWeeklyServings: 1, maxWeeklyServings: 7,
+    stores: {
+      us: {
+        costco: { price: 9.99, packageLabel: "8 lb bag", servingsPerPackage: 90 },
+        walmart: { price: 3.24, packageLabel: "42 oz bag", servingsPerPackage: 29 },
+        traderJoes: { price: 2.99, packageLabel: "24 oz bag", servingsPerPackage: 17 },
+      },
+      ca: {
+        costco: { price: 11.29, packageLabel: "3.6 kg bag", servingsPerPackage: 90 },
+        walmart: { price: 3.79, packageLabel: "1.2 kg bag", servingsPerPackage: 29 },
+        noFrills: { price: 2.99, packageLabel: "680 g bag", servingsPerPackage: 17 },
+      },
+      uk: {
+        tesco: { price: 2.49, packageLabel: "1.2 kg bag", servingsPerPackage: 29 },
+        asda: { price: 2.29, packageLabel: "1.2 kg bag", servingsPerPackage: 29 },
+        aldi: { price: 1.79, packageLabel: "680 g bag", servingsPerPackage: 17 },
+      },
+      au: {
+        woolworths: { price: 4.29, packageLabel: "1.2 kg bag", servingsPerPackage: 29 },
+        coles: { price: 4.29, packageLabel: "1.2 kg bag", servingsPerPackage: 29 },
+        aldi: { price: 2.99, packageLabel: "680 g bag", servingsPerPackage: 17 },
+      },
+    },
+  },
+];
+
+// ── Scoring / ranking logic ───────────────────────────────────────────────
+
+// Nutrient score per reference serving, weighted toward strongest-evidence
+// testosterone-support nutrients (zinc + vitamin D first).
+function nutrientScore(item) {
+  const n = item.nutrients;
+  return (
+    0.30 * (n.zincMg / 11) +
+    0.20 * (n.magnesiumMg / 420) +
+    0.25 * (n.vitaminDIU / 800) +
+    0.15 * (n.proteinG / 56) +
+    0.10 * (n.healthyFatG / 50)
+  );
+}
+
+function pricePerServing(store) {
+  return store.price / store.servingsPerPackage;
+}
+
+// Cheapest store (among allowed) that carries this item, within a region.
+function bestStoreKey(item, region, allowedStores) {
+  let best = null, bestPrice = Infinity;
+  for (const storeKey of allowedStores) {
+    const store = item.stores[region][storeKey];
+    if (!store) continue;
+    const pps = pricePerServing(store);
+    if (pps < bestPrice) { bestPrice = pps; best = storeKey; }
+  }
+  return best;
+}
+
+function costEfficiencyScore(item, region, allowedStores) {
+  const storeKey = bestStoreKey(item, region, allowedStores);
+  if (!storeKey) return null;
+  const pps = pricePerServing(item.stores[region][storeKey]);
+  if (pps <= 0) return null;
+  return { score: nutrientScore(item) / pps, storeKey, pricePerServing: pps };
+}
+
+function normalizeScores(scoredItems) {
+  if (scoredItems.length === 0) return [];
+  const vals = scoredItems.map(s => s.rawScore);
+  const min = Math.min(...vals), max = Math.max(...vals);
+  const range = max - min || 1;
+  return scoredItems.map(s => ({ ...s, normScore: Math.round(((s.rawScore - min) / range) * 100) }));
+}
+
+function valueClass(v) {
+  if (v >= 70) return "vs-high";
+  if (v >= 55) return "vs-mid";
+  return "vs-low";
+}
+
+// Diet filter = AND (item must carry every selected tag).
+// Store filter = OR (item eligible if any selected store carries it).
+function filterItems(staples, region, selectedDiets, selectedStores) {
+  return staples.filter(item => {
+    if (selectedDiets.length && !selectedDiets.every(d => item.dietTags.includes(d))) return false;
+    const hasAnyStore = selectedStores.some(s => item.stores[region][s]);
+    if (!hasAnyStore) return false;
+    return true;
+  });
+}
+
+// Greedy fill: highest cost-efficiency first, take min serving if affordable,
+// then top up toward max serving while budget allows, before moving on.
+function buildGroceryList(staples, region, budget, selectedDiets, selectedStores) {
+  const filtered = filterItems(staples, region, selectedDiets, selectedStores);
+
+  const scored = filtered
+    .map(item => {
+      const eff = costEfficiencyScore(item, region, selectedStores);
+      if (!eff) return null;
+      return { item, rawScore: eff.score, storeKey: eff.storeKey, pps: eff.pricePerServing };
+    })
+    .filter(Boolean);
+
+  const normalized = normalizeScores(scored);
+  normalized.sort((a, b) => b.rawScore - a.rawScore);
+
+  let spent = 0;
+  const picks = [];
+
+  for (const entry of normalized) {
+    const { item, storeKey, pps } = entry;
+    let qty = item.minWeeklyServings;
+    const minCost = qty * pps;
+    if (spent + minCost > budget) continue;
+
+    spent += minCost;
+    while (qty < item.maxWeeklyServings && spent + pps <= budget) {
+      qty += 1;
+      spent += pps;
+    }
+    picks.push({ ...entry, qty, cost: qty * pps });
+  }
+
+  const nutrientTotals = { zincMg: 0, magnesiumMg: 0, vitaminDIU: 0, proteinG: 0, healthyFatG: 0 };
+  picks.forEach(p => {
+    Object.keys(nutrientTotals).forEach(k => { nutrientTotals[k] += p.item.nutrients[k] * p.qty; });
+  });
+
+  return { picks, spent, remaining: budget - spent, nutrientTotals };
+}
+
+// ── UI helpers ─────────────────────────────────────────────────────────────
+function showLoading(on) {
+  document.getElementById("loadingBar").style.display = on ? "block" : "none";
+}
+function showError(msg) {
+  const el = document.getElementById("errorMsg");
+  el.textContent = msg;
+  el.style.display = "block";
+  setTimeout(() => el.style.display = "none", 6000);
+}
+
+// ── Components ─────────────────────────────────────────────────────────────
+function ControlsPanel({ region, changeRegion, symbol, budget, setBudget, selectedDiets, toggleDiet, selectedStores, toggleStore }) {
+  const stores = REGIONS[region].stores;
+  return (
+    <div className="controls-panel">
+      <div className="control-group">
+        <div className="control-label">Region</div>
+        <div className="pill-row">
+          {REGION_ORDER.map(r => (
+            <button
+              key={r}
+              className={"pill" + (region === r ? " active" : "")}
+              onClick={() => changeRegion(r)}
+            >{REGIONS[r].label}</button>
+          ))}
+        </div>
+      </div>
+      <div className="control-group">
+        <div className="control-label">Weekly Budget</div>
+        <div className="budget-input-wrap">
+          <span className="dollar">{symbol}</span>
+          <input
+            id="budgetInput"
+            type="number"
+            min="0"
+            step="5"
+            value={budget}
+            onChange={e => setBudget(Math.max(0, Number(e.target.value) || 0))}
+          />
+        </div>
+      </div>
+      <div className="control-group">
+        <div className="control-label">Dietary Preferences</div>
+        <div className="pill-row">
+          {DIET_TAGS.map(d => (
+            <button
+              key={d.key}
+              className={"pill" + (selectedDiets.includes(d.key) ? " active" : "")}
+              onClick={() => toggleDiet(d.key)}
+            >{d.label}</button>
+          ))}
+        </div>
+      </div>
+      <div className="control-group">
+        <div className="control-label">Stores</div>
+        <div className="store-checks">
+          {stores.map(s => (
+            <label key={s.key} className="store-check">
+              <input
+                type="checkbox"
+                checked={selectedStores.includes(s.key)}
+                onChange={() => toggleStore(s.key)}
+              />
+              {s.label}
+            </label>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function SummaryBar({ symbol, budget, spent, remaining, scrolled }) {
+  const over = remaining < 0;
+  return (
+    <div className={"summary-bar" + (scrolled ? " scrolled" : "")}>
+      <div className="summary-stat">
+        <div className="label">Budget</div>
+        <div className="figure">{symbol}{budget.toFixed(2)}</div>
+      </div>
+      <div className="summary-stat">
+        <div className="label">Spent</div>
+        <div className="figure">{symbol}{spent.toFixed(2)}</div>
+      </div>
+      <div className={"summary-stat remaining" + (over ? " over" : "")}>
+        <div className="label">Remaining</div>
+        <div className="figure">{symbol}{remaining.toFixed(2)}</div>
+      </div>
+      <div className="summary-spacer" />
+    </div>
+  );
+}
+
+function GroceryItemRow({ pick, region, symbol }) {
+  const { item, storeKey, pps, qty, cost, normScore } = pick;
+  const store = item.stores[region][storeKey];
+  const storeLabel = REGIONS[region].stores.find(s => s.key === storeKey).label;
+  return (
+    <div className="item-row">
+      <div className="item-name-cell">
+        <span className="item-name">{item.name}</span>
+        <span className="item-serving">{item.referenceServing}</span>
+      </div>
+      <div className="item-store-cell">
+        <span className={"badge badge-" + storeKey}>{storeLabel}</span>
+        <span className="price-line">{symbol}{store.price.toFixed(2)} — {symbol}{pps.toFixed(2)}/serving</span>
+        <span className="pkg-label">{store.packageLabel}</span>
+      </div>
+      <div className="item-qty-cell">{qty} / wk</div>
+      <div className="item-cost-cell">{symbol}{cost.toFixed(2)}</div>
+      <div className="item-cost-cell" style={{textAlign: "left"}}>
+        <span className={"value-score " + valueClass(normScore)}>
+          {normScore}
+          <span className="value-bar"><span className="value-bar-fill" style={{width: normScore + "%"}}></span></span>
+        </span>
+      </div>
+    </div>
+  );
+}
+
+function CategorySection({ category, picks, region, symbol }) {
+  const total = picks.reduce((s, p) => s + p.cost, 0);
+  return (
+    <div className="category-section">
+      <div className="category-heading">
+        <span>{CATEGORY_LABELS[category]}</span>
+        <span className="cat-total">{symbol}{total.toFixed(2)}</span>
+      </div>
+      {picks.map(p => <GroceryItemRow key={p.item.id} pick={p} region={region} symbol={symbol} />)}
+    </div>
+  );
+}
+
+function NutrientSummaryPanel({ nutrientTotals }) {
+  return (
+    <div className="nutrient-panel">
+      <div className="nutrient-panel-inner">
+        <div className="nutrient-panel-title">Weekly nutrient delivery vs. target</div>
+        <div className="nutrient-grid">
+          {Object.keys(WEEKLY_TARGETS).map(key => {
+            const total = nutrientTotals[key];
+            const target = WEEKLY_TARGETS[key];
+            const pct = Math.min(100, Math.round((total / target) * 100));
+            const cls = valueClass(pct);
+            return (
+              <div className="nutrient-item" key={key}>
+                <div className="n-label">
+                  <span>{NUTRIENT_LABELS[key]}</span>
+                  <strong>{Math.round(total)}{NUTRIENT_UNITS[key]} / {Math.round(target)}{NUTRIENT_UNITS[key]} ({pct}%)</strong>
+                </div>
+                <div className="n-track">
+                  <div className={"n-fill " + cls} style={{width: pct + "%", background: "var(--" + (cls === "vs-high" ? "sage" : cls === "vs-mid" ? "amber" : "clay") + ")"}}></div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function EmptyState({ message }) {
+  return (
+    <div className="empty-state">
+      <div className="big">No items to show</div>
+      <div>{message}</div>
+    </div>
+  );
+}
+
+function App() {
+  const [staples, setStaples] = useState([]);
+  const [loaded, setLoaded] = useState(false);
+  const [region, setRegion] = useState("us");
+  const [budget, setBudget] = useState(75);
+  const [selectedDiets, setSelectedDiets] = useState([]);
+  const [selectedStores, setSelectedStores] = useState(REGIONS.us.stores.map(s => s.key));
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    async function load() {
+      showLoading(true);
+      try {
+        const res = await fetch(DATA_URL);
+        if (!res.ok) throw new Error("fetch failed");
+        const json = await res.json();
+        if (Array.isArray(json) && json.length > 0) {
+          setStaples(json);
+        } else {
+          throw new Error("empty dataset");
+        }
+      } catch (e) {
+        setStaples(FALLBACK_STAPLES);
+        showError("Could not load grocery_staples_data.json — showing built-in sample data instead.");
+        console.error(e);
+      }
+      setLoaded(true);
+      showLoading(false);
+    }
+    load();
+  }, []);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 80);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  function toggleDiet(key) {
+    setSelectedDiets(prev => prev.includes(key) ? prev.filter(d => d !== key) : [...prev, key]);
+  }
+  function toggleStore(key) {
+    setSelectedStores(prev => prev.includes(key) ? prev.filter(s => s !== key) : [...prev, key]);
+  }
+  function changeRegion(r) {
+    setRegion(r);
+    setSelectedStores(REGIONS[r].stores.map(s => s.key));
+  }
+
+  const symbol = REGIONS[region].symbol;
+
+  const result = useMemo(
+    () => buildGroceryList(staples, region, budget, selectedDiets, selectedStores),
+    [staples, region, budget, selectedDiets, selectedStores]
+  );
+
+  const picksByCategory = useMemo(() => {
+    const grouped = {};
+    result.picks.forEach(p => {
+      const cat = p.item.category;
+      (grouped[cat] = grouped[cat] || []).push(p);
+    });
+    Object.values(grouped).forEach(arr => arr.sort((a, b) => b.normScore - a.normScore));
+    return grouped;
+  }, [result]);
+
+  if (!loaded) return null;
+
+  const noStoreSelected = selectedStores.length === 0;
+  const noPicks = result.picks.length === 0;
+
+  return (
+    <React.Fragment>
+      <header className="masthead">
+        <div className="masthead-inner">
+          <div>
+            <div className="brand-mark">No More Dad Bod / Research Desk</div>
+            <h1 className="headline">Eat for your hormones,<br/><em>not the marketing copy.</em></h1>
+          </div>
+          <p className="subhead"><strong>Zinc, magnesium, vitamin D, protein &amp; healthy fat</strong> per dollar — ranked against real staple pricing in the US, Canada, UK &amp; Australia, built to fit your weekly budget.</p>
+        </div>
+      </header>
+
+      <div className="controls-wrap">
+        <ControlsPanel
+          region={region} changeRegion={changeRegion} symbol={symbol}
+          budget={budget} setBudget={setBudget}
+          selectedDiets={selectedDiets} toggleDiet={toggleDiet}
+          selectedStores={selectedStores} toggleStore={toggleStore}
+        />
+      </div>
+
+      <SummaryBar symbol={symbol} budget={budget} spent={result.spent} remaining={result.remaining} scrolled={scrolled} />
+
+      <div className="list-wrap">
+        {noStoreSelected ? (
+          <EmptyState message="Select at least one store to see grocery picks." />
+        ) : noPicks ? (
+          <EmptyState message="Your budget is too low, or your diet filters exclude everything affordable. Try raising the budget or loosening a filter." />
+        ) : (
+          CATEGORY_ORDER.filter(cat => picksByCategory[cat]).map(cat => (
+            <CategorySection key={cat} category={cat} picks={picksByCategory[cat]} region={region} symbol={symbol} />
+          ))
+        )}
+      </div>
+
+      {!noPicks && <NutrientSummaryPanel nutrientTotals={result.nutrientTotals} />}
+
+      <div className="footnote">
+        <strong>Methodology:</strong> Cost-Efficiency Score = a weighted nutrient-density formula (30% zinc, 20% magnesium, 25% vitamin D, 15% protein, 10% healthy fat — each versus adult-male daily targets) divided by price-per-serving at the cheapest store you've selected, then normalized 0–100 within your current filtered list. The grocery list is built greedily: highest score-per-dollar items are added first, filled up to a realistic weekly quantity, until your budget is spent. Diet filters require an item to match <em>all</em> selected tags; store filters include an item if <em>any</em> selected store carries it. Switching region swaps in that country's staple pricing and stores (US: Costco/Walmart/Trader Joe's, Canada: Costco/Walmart/No Frills, UK: Tesco/Asda/Aldi, Australia: Woolworths/Coles/Aldi). Pricing and package sizes are illustrative, based on typical current retail figures per country — not live store data, and not medical advice.
+      </div>
+    </React.Fragment>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+
+</body>
+</html>
