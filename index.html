@@ -228,6 +228,22 @@
   }
   .category-heading .cat-total { color: var(--ink-soft); }
 
+  .column-header {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 0.8fr 0.7fr 0.9fr;
+    gap: 12px;
+    padding: 0 4px 8px;
+    margin-bottom: 6px;
+    border-bottom: 2px solid var(--ink);
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--ink-soft);
+  }
+  .column-header .right { text-align: right; }
+
   .item-row {
     display: grid;
     grid-template-columns: 1.6fr 1fr 0.8fr 0.7fr 0.9fr;
@@ -381,6 +397,7 @@
     .subhead { text-align: left; }
     .item-row { grid-template-columns: 1fr; gap: 4px; }
     .item-qty-cell, .item-cost-cell { text-align: left; }
+    .column-header { display: none; }
   }
 </style>
 </head>
@@ -1079,9 +1096,18 @@ function App() {
         ) : noPicks ? (
           <EmptyState message="Your budget is too low, or your diet filters exclude everything affordable. Try raising the budget or loosening a filter." />
         ) : (
-          CATEGORY_ORDER.filter(cat => picksByCategory[cat]).map(cat => (
-            <CategorySection key={cat} category={cat} picks={picksByCategory[cat]} region={region} symbol={symbol} />
-          ))
+          <React.Fragment>
+            <div className="column-header">
+              <div>Item</div>
+              <div>Store &amp; Price</div>
+              <div className="right">Weekly Qty</div>
+              <div className="right">Cost</div>
+              <div>Score</div>
+            </div>
+            {CATEGORY_ORDER.filter(cat => picksByCategory[cat]).map(cat => (
+              <CategorySection key={cat} category={cat} picks={picksByCategory[cat]} region={region} symbol={symbol} />
+            ))}
+          </React.Fragment>
         )}
       </div>
 
